@@ -13,4 +13,8 @@
   http://www.wiki.ieo.es/uploads/images/gallery/2020-03-Mar/scaled-840-0/image-1583136050784.png
   
  Salinity and temperature profiles are drawn for each profile. Shaded areas behind profiles indicate climatologic values (mean +/- standard deviation). An orange circle over the profile indicates that a test failed. 
-  
+ 
+Most of the tests done by the application simply reproduce the procedure recommended by GTSPP. Its real time quality control manual lays out in detail the automatic tests to be carried out on temperature and salinity data (se also SeaDataNet Data Quality Control Procedures manual). In order not to reinvent the wheel, the CoTeDe Python package created by Guilherme P. Castelao has been adapted.
+
+To learn more: http://www.wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker
+
