@@ -1,0 +1,322 @@
+{"main": {
+    "valid_datetime": null,
+    "valid_geolocation": null,
+    "location_at_sea": {
+	    "bad_flag": 3
+        },
+	"max_speed": 15
+    },
+"PRES": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 10500
+        }
+    },
+"CNDC": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 9
+        }
+    },
+"OSAT": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 120
+        }
+    },
+"FLU2": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 150
+        }
+    },
+"TUR4": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 1000
+        }
+    },
+"LGHT": {
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 5000
+        }
+    },                             
+"TEMP": {
+    "pstep": null,
+    "instrument_range": {
+        "minval": -5,
+        "maxval": 35
+        },
+    "woa_normbias": {
+        "threshold": 10
+        },
+    "global_range": {
+        "minval": -2.5,
+        "maxval": 40
+        },
+    "regional_range": {
+	    "MediterraneanSea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[30, -6],
+						[30, 40],
+						[40, 35],
+						[42, 20],
+						[50, 15],
+						[40, 5],
+						[30, -6]
+					]
+				]
+			},
+			"minval": 10,
+			"maxval": 40
+           },
+	    "RedSea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[10, 40],
+						[20, 50],
+						[30, 30],
+						[10, 40]
+					]
+				]
+			},		
+			"minval": 21.7,
+			"maxval": 40
+           },
+	    "North_Western_Shelves": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[50, -20],
+						[50, 10],
+						[60, 10],
+						[60, -20],
+						[50, -20]
+					]
+				]
+			},		
+			"minval": -2.0,
+			"maxval": 24
+           },
+	    "South_West_Shelves": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[25, -30],
+						[25, 0],
+						[50, 0],
+						[50, -30],
+						[25, -30]
+					]
+				]
+			},		
+			"minval": -2.0,
+			"maxval": 24
+           },
+	    "Artic_Sea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[60, -180],
+						[60, 180],
+						[90, 180],
+						[90, -180],
+						[60, -180]
+					]
+				]
+			},		
+			"minval": -1.92,
+			"maxval": 25
+           }		   
+        },		
+    "spike": {
+		"threshold": 6.0
+        },
+    "spike_depthconditional": {
+        "pressure_threshold": 500,
+        "shallow_max": 6.0,
+        "deep_max": 2.0
+        },
+    "tukey53H_norm": {
+        "threshold": 1.5,
+        "l": 12
+        },
+    "gradient": {
+	"threshold": 9.0
+        },
+    "gradient_depthconditional": {
+        "pressure_threshold": 500,
+        "shallow_max": 9.0,
+        "deep_max": 3.0
+        },
+    "digit_roll_over": 10,
+    "rate_of_change": 4,
+    "cum_rate_of_change": {
+        "memory": 0.8,
+        "threshold": 4
+    },
+    "profile_envelop": [
+        ["> 0", "<= 25", -2, 37],
+        ["> 25", "<= 100", -2, 36],
+        ["> 100", "<= 150", -2, 34],
+        ["> 150", "<= 200", -2, 33],
+        ["> 200", "<= 300", -2, 29],
+        ["> 300", "<= 1000", -2, 27],
+        ["> 1000", "<= 3000", -1.5, 18],
+        ["> 3000", "<= 5500", -1.5, 7],
+        ["> 5500", "<= 12000", -1.5, 4]
+        ],
+    "anomaly_detection": {
+        "threshold": -20.0,
+        "features": {
+            "gradient": {
+                "model": "exponweib",
+                "qlimit": 0.013500,
+                "param": [1.431385, 0.605537, 0.013500, 0.015567]
+                },
+            "spike": {
+                "model": "exponweib",
+                "qlimit": 0.000400,
+                "param": [1.078231, 0.512053, 0.000400, 0.002574]
+                },
+            "tukey53H_norm": {
+                "model": "exponweib",
+                "qlimit": 0.001614,
+                "param": [4.497367, 0.351177, 0.001612, 0.000236]
+                },
+            "rate_of_change": {
+                "model": "exponweib",
+                "qlimit": 0.041700,
+                "param": [2.668970, 0.469459, 0.041696, 0.017221]
+                },
+            "woa_normbias": {
+                "model": "exponweib",
+                "qlimit": 1.615422,
+                "param": [0.899871, 0.987157, 1.615428, 0.662358]
+                }
+            }
+        }
+    },
+"PSAL": {
+    "woa_normbias": {
+        "threshold": 10
+        },
+    "global_range": {
+        "minval": 0,
+        "maxval": 41
+        },
+    "regional_range": {
+	    "MediterraneanSea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[30, -6],
+						[30, 40],
+						[40, 35],
+						[42, 20],
+						[50, 15],
+						[40, 5],
+						[30, -6]
+					]
+				]
+			},
+			"minval": 2,
+			"maxval": 40
+           },
+	    "RedSea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[10, 40],
+						[20, 50],
+						[30, 30],
+						[10, 40]
+					]
+				]
+			},		
+			"minval": 2,
+			"maxval": 41
+           },
+	    "North_Western_Shelves": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[50, -20],
+						[50, 10],
+						[60, 10],
+						[60, -20],
+						[50, -20]
+					]
+				]
+			},		
+			"minval": 0,
+			"maxval": 37
+           },
+	    "South_West_Shelves": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[25, -30],
+						[25, 0],
+						[50, 0],
+						[50, -30],
+						[25, -30]
+					]
+				]
+			},		
+			"minval": 0,
+			"maxval": 38
+           },
+	    "Artic_Sea": {
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[60, -180],
+						[60, 180],
+						[90, 180],
+						[90, -180],
+						[60, -180]
+					]
+				]
+			},		
+			"minval": 2,
+			"maxval": 40
+           }		   
+        },		
+    "spike": {
+        "threshold": 0.9
+        },
+    "spike_depthconditional": {
+        "pressure_threshold": 500,
+        "shallow_max": 0.9,
+        "deep_max": 0.3
+        },
+    "tukey53H_norm": {
+        "threshold": 1.5,
+        "l": 12
+        },
+    "gradient": {
+        "threshold": 1.5
+        },
+    "gradient_depthconditional": {
+        "pressure_threshold": 500,
+        "shallow_max": 1.5,
+        "deep_max": 0.5
+        },
+    "digit_roll_over": 5
+    }
+}
