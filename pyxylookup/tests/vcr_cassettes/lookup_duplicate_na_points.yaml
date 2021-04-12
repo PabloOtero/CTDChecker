@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: !!binary |
+      haZwb2ludHOSkssAAAAAAAAAAMs/8AAAAAAAAJLLQBQAAAAAAADLQBgAAAAAAACtc2hvcmVkaXN0
+      YW5jZcOlZ3JpZHPCpWFyZWFzwrNhcmVhc2Rpc3RhbmNld2l0aGluAA==
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['97']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/msgpack]
+    method: POST
+    uri: http://api.iobis.org/xylookup/
+  response:
+    body:
+      string: !!binary |
+        koGtc2hvcmVkaXN0YW5jZctBHM8oAAAAAIGtc2hvcmVkaXN0YW5jZcvAwnsAAAAAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['49']
+      Content-Type: [application/msgpack]
+      Date: ['Tue, 18 Sep 2018 10:34:07 GMT']
+      Server: [nginx/1.10.3 (Ubuntu)]
+    status: {code: 200, message: OK}
+- request:
+    body: !!binary |
+      haZwb2ludHOSkssAAAAAAAAAAMs/8AAAAAAAAJLLQBQAAAAAAADLQBgAAAAAAACtc2hvcmVkaXN0
+      YW5jZcOlZ3JpZHPDpWFyZWFzw7NhcmVhc2Rpc3RhbmNld2l0aGluAA==
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['97']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/msgpack]
+    method: POST
+    uri: http://api.iobis.org/xylookup/
+  response:
+    body:
+      string: !!binary |
+        koOtc2hvcmVkaXN0YW5jZctBHM8oAAAAAKVncmlkc4Otc3N0ZW1wZXJhdHVyZctAO6DdAAAAAKpz
+        c3NhbGluaXR5y0BBXAFAAAAAqmJhdGh5bWV0cnnLQLMlAAAAAAClYXJlYXOBpG9iaXOShadjb3Vu
+        dHJ5wKRiYXNloUakdHlwZaRhYm5qomlkAaRuYW1lqUFCTko6IGFsbIWnY291bnRyecCkYmFzZaFU
+        pHR5cGWkYWJuaqJpZMyzpG5hbWWuTm9ydGggQXRsYW50aWODrXNob3JlZGlzdGFuY2XLwMJ7AAAA
+        AAClZ3JpZHOBqmJhdGh5bWV0cnnLwAAAAAAAAAClYXJlYXOBpG9iaXORhadjb3VudHJ5wKRiYXNl
+        oVSkdHlwZaNlZXqiaWTMsqRuYW1lp05pZ2VyaWE=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['314']
+      Content-Type: [application/msgpack]
+      Date: ['Tue, 18 Sep 2018 10:34:07 GMT']
+      Server: [nginx/1.10.3 (Ubuntu)]
+    status: {code: 200, message: OK}
+version: 1

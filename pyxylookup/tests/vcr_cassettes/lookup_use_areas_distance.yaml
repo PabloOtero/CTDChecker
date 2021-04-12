@@ -1,0 +1,71 @@
+interactions:
+- request:
+    body: !!binary |
+      haZwb2ludHOaksvAZU5OPbfOoMvASxrH0LHdEpLLwFlSlMBh78jLP+7YsZF0F4CSy8BZKQxOMkcq
+      y0AwEVzawmDgksvAVD9TEr62I8vASOk5fu4hfJLLwDwbr2KR3RjLwFUovGyZFDCSy0BJGMlwgURU
+      y8BVX+BIFCrUkstASvqsxcehwMtAIC3OjeDeSJLLQFVIS/lnL6TLQD/OT/gqPwSSy0Bb2UcYx5W8
+      y8BWNSJgu1FBkstAYaXom1FT6svAUpZ28y2w2K1zaG9yZWRpc3RhbmNlwqVncmlkc8KlYXJlYXPD
+      s2FyZWFzZGlzdGFuY2V3aXRoaW7OAA9CQA==
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['253']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/msgpack]
+    method: POST
+    uri: http://api.iobis.org/xylookup/
+  response:
+    body:
+      string: !!binary |
+        moGlYXJlYXOBpG9iaXOVhadjb3VudHJ5wKRiYXNloUakdHlwZaRhYm5qomlkAaRuYW1lqUFCTko6
+        IGFsbIWnY291bnRyeatOZXcgWmVhbGFuZKRiYXNloVSkdHlwZaNlZXqiaWTMqqRuYW1lq05ldyBa
+        ZWFsYW5khadjb3VudHJ5q05ldyBaZWFsYW5kpGJhc2WhRqR0eXBlo2VleqJpZMyrpG5hbWWwTmV3
+        IFplYWxhbmQ6IGFsbIWnY291bnRyecCkYmFzZaFUpHR5cGWkYWJuaqJpZMzipG5hbWWuU291dGhl
+        cm4gT2NlYW6Fp2NvdW50cnnApGJhc2WhVKR0eXBlpGFibmqiaWTM5KRuYW1lrVNvdXRoIFBhY2lm
+        aWOBpWFyZWFzgaRvYmlzl4WnY291bnRyecCkYmFzZaFGpHR5cGWkYWJuaqJpZAGkbmFtZalBQk5K
+        OiBhbGyFp2NvdW50cnmnRWN1YWRvcqRiYXNloUakdHlwZaNlZXqiaWQ+pG5hbWWsRWN1YWRvcjog
+        YWxshadjb3VudHJ5p0VjdWFkb3KkYmFzZaFUpHR5cGWjZWV6omlkP6RuYW1lukVjdWFkb3I6IEdh
+        bGFwYWdvcyBJc2xhbmRzhadjb3VudHJ5pkZyYW5jZaRiYXNloUakdHlwZaNlZXqiaWRJpG5hbWWr
+        RnJhbmNlOiBhbGyFp2NvdW50cnmmRnJhbmNlpGJhc2WhVKR0eXBlo2VleqJpZEykbmFtZblGcmFu
+        Y2U6IENsaXBwZXJ0b24gSXNsYW5khadjb3VudHJ5wKRiYXNloVSkdHlwZaRhYm5qomlkzLWkbmFt
+        Za1Ob3J0aCBQYWNpZmljhadjb3VudHJ5wKRiYXNloVSkdHlwZaRhYm5qomlkzOSkbmFtZa1Tb3V0
+        aCBQYWNpZmljgaVhcmVhc4Gkb2Jpc5mFp2NvdW50cnnApGJhc2WhRqR0eXBlpGFibmqiaWQBpG5h
+        bWWpQUJOSjogYWxshadjb3VudHJ5pkZyYW5jZaRiYXNloUakdHlwZaNlZXqiaWRJpG5hbWWrRnJh
+        bmNlOiBhbGyFp2NvdW50cnmmRnJhbmNlpGJhc2WhVKR0eXBlo2VleqJpZEykbmFtZblGcmFuY2U6
+        IENsaXBwZXJ0b24gSXNsYW5khadjb3VudHJ5qUd1YXRlbWFsYaRiYXNloUakdHlwZaNlZXqiaWRn
+        pG5hbWWuR3VhdGVtYWxhOiBhbGyFp2NvdW50cnmpR3VhdGVtYWxhpGJhc2WhVKR0eXBlo2VleqJp
+        ZGmkbmFtZbhHdWF0ZW1hbGE6IE5vcnRoIFBhY2lmaWOFp2NvdW50cnmmTWV4aWNvpGJhc2WhRqR0
+        eXBlo2VleqJpZMyVpG5hbWWrTWV4aWNvOiBhbGyFp2NvdW50cnmmTWV4aWNvpGJhc2WhVKR0eXBl
+        o2VleqJpZMyWpG5hbWW2TWV4aWNvOiBOb3J0aCBBdGxhbnRpY4WnY291bnRyeaZNZXhpY2+kYmFz
+        ZaFUpHR5cGWjZWV6omlkzJekbmFtZbVNZXhpY286IE5vcnRoIFBhY2lmaWOFp2NvdW50cnnApGJh
+        c2WhVKR0eXBlpGFibmqiaWTMtaRuYW1lrU5vcnRoIFBhY2lmaWOBpWFyZWFzgaRvYmlzlYWnY291
+        bnRyecCkYmFzZaFGpHR5cGWkYWJuaqJpZAGkbmFtZalBQk5KOiBhbGyFp2NvdW50cnnApGJhc2Wh
+        VKR0eXBlo2VleqJpZAqkbmFtZalBcmdlbnRpbmGFp2NvdW50cnmlQ2hpbGWkYmFzZaFUpHR5cGWj
+        ZWV6omlkKKRuYW1lpUNoaWxlhadjb3VudHJ5pUNoaWxlpGJhc2WhRqR0eXBlo2VleqJpZCmkbmFt
+        ZapDaGlsZTogYWxshadjb3VudHJ5wKRiYXNloVSkdHlwZaRhYm5qomlkzOSkbmFtZa1Tb3V0aCBQ
+        YWNpZmljgaVhcmVhc4Gkb2Jpc5KFp2NvdW50cnmqQW50YXJjdGljYaRiYXNloUakdHlwZaNlZXqi
+        aWQFpG5hbWWvQW50YXJjdGljYTogYWxshadjb3VudHJ5qkFudGFyY3RpY2GkYmFzZaFUpHR5cGWj
+        ZWV6omlkB6RuYW1lukFudGFyY3RpY2E6IFNvdXRoZXJuIE9jZWFugaVhcmVhc4Gkb2Jpc5KFp2Nv
+        dW50cnmqQW50YXJjdGljYaRiYXNloUakdHlwZaNlZXqiaWQFpG5hbWWvQW50YXJjdGljYTogYWxs
+        hadjb3VudHJ5qkFudGFyY3RpY2GkYmFzZaFUpHR5cGWjZWV6omlkB6RuYW1lukFudGFyY3RpY2E6
+        IFNvdXRoZXJuIE9jZWFugaVhcmVhc4Gkb2Jpc5aFp2NvdW50cnnApGJhc2WhRqR0eXBlpGFibmqi
+        aWQBpG5hbWWpQUJOSjogYWxshadjb3VudHJ5wKRiYXNloVSkdHlwZaRhYm5qomlkdaRuYW1lrElu
+        ZGlhbiBPY2VhboWnY291bnRyecCkYmFzZaFUpHR5cGWjZWV6omlkzLqkbmFtZaRPbWFuhadjb3Vu
+        dHJ5wKRiYXNloVSkdHlwZaNlZXqiaWTM16RuYW1lqlNleWNoZWxsZXOFp2NvdW50cnnApGJhc2Wh
+        VKR0eXBlo2VleqJpZMzcpG5hbWWnU29tYWxpYYWnY291bnRyecCkYmFzZaFUpHR5cGWjZWV6omlk
+        zQEdpG5hbWWlWWVtZW6BpWFyZWFzgIGlYXJlYXOBpG9iaXOShadjb3VudHJ5qkFudGFyY3RpY2Gk
+        YmFzZaFGpHR5cGWjZWV6omlkBaRuYW1lr0FudGFyY3RpY2E6IGFsbIWnY291bnRyeapBbnRhcmN0
+        aWNhpGJhc2WhVKR0eXBlo2VleqJpZAekbmFtZbpBbnRhcmN0aWNhOiBTb3V0aGVybiBPY2VhboGl
+        YXJlYXOBpG9iaXOShadjb3VudHJ5qkFudGFyY3RpY2GkYmFzZaFGpHR5cGWjZWV6omlkBaRuYW1l
+        r0FudGFyY3RpY2E6IGFsbIWnY291bnRyeapBbnRhcmN0aWNhpGJhc2WhVKR0eXBlo2VleqJpZAek
+        bmFtZbpBbnRhcmN0aWNhOiBTb3V0aGVybiBPY2Vhbg==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['2368']
+      Content-Type: [application/msgpack]
+      Date: ['Tue, 18 Sep 2018 10:34:07 GMT']
+      Server: [nginx/1.10.3 (Ubuntu)]
+    status: {code: 200, message: OK}
+version: 1

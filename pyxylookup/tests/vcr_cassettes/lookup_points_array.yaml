@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: !!binary |
+      haZwb2ludHOTksvAZUAAAAAAAMs/8AAAAAAAAJLLAAAAAAAAAADLQBQAAAAAAACSy0BeAAAAAAAA
+      ywAAAAAAAAAArXNob3JlZGlzdGFuY2XDpWdyaWRzw6VhcmVhc8KzYXJlYXNkaXN0YW5jZXdpdGhp
+      bgA=
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['116']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/msgpack]
+    method: POST
+    uri: http://api.iobis.org/xylookup/
+  response:
+    body:
+      string: !!binary |
+        k4Ktc2hvcmVkaXN0YW5jZctBHAyAAAAAAKVncmlkc4Otc3N0ZW1wZXJhdHVyZctAO5/vgAAAAKpz
+        c3NhbGluaXR5y0BBn0qgAAAAqmJhdGh5bWV0cnnLQLU4AAAAAACCrXNob3JlZGlzdGFuY2XLQO8O
+        YAAAAAClZ3JpZHODrXNzdGVtcGVyYXR1cmXLQDtK8+AAAACqc3NzYWxpbml0ectAQUF9AAAAAKpi
+        YXRoeW1ldHJ5y0CpzgAAAAAAgq1zaG9yZWRpc3RhbmNly8C+qAAAAAAApWdyaWRzg61zc3RlbXBl
+        cmF0dXJly0A9e1CAAAAAqnNzc2FsaW5pdHnLQEBQkMAAAACqYmF0aHltZXRyecvAdhAAAAAAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Connection: [keep-alive]
+      Content-Length: ['283']
+      Content-Type: [application/msgpack]
+      Date: ['Tue, 18 Sep 2018 10:34:06 GMT']
+      Server: [nginx/1.10.3 (Ubuntu)]
+    status: {code: 200, message: OK}
+version: 1
