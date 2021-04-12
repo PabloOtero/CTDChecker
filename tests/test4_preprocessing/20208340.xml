@@ -1,0 +1,2489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN_CSR_ISO19139_5.2.0.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<MI_Metadata xsi:type="gmi:MI_Metadata_Type" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:sdn="http://www.seadatanet.org" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <gmd:fileIdentifier>
+        <gco:CharacterString>urn:SDN:CSR:LOCAL:29MO202009170</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+        <gmd:LanguageCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#LanguageCode" codeListValue="eng" codeSpace="ISO 639-2">English</gmd:LanguageCode>
+    </gmd:language>
+    <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_ScopeCode" codeListValue="series" codeSpace="ISOTC211/19115">series</gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:hierarchyLevelName>
+        <sdn:SDN_HierarchyLevelNameCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_HierarchyLevelNameCode" codeListValue="CSR" codeSpace="SeaDataNet">Cruise Summary record</sdn:SDN_HierarchyLevelNameCode>
+    </gmd:hierarchyLevelName>
+    <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+            <gmd:organisationName>
+                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="353" codeSpace="SeaDataNet">IEO, Spanish Oceanographic Institute</sdn:SDN_EDMOCode>
+            </gmd:organisationName>
+            <gmd:contactInfo>
+                <gmd:CI_Contact>
+                    <gmd:phone>
+                        <gmd:CI_Telephone>
+                            <gmd:voice>
+                                <gco:CharacterString>+34 91 342 11 00</gco:CharacterString>
+                            </gmd:voice>
+                            <gmd:facsimile>
+                                <gco:CharacterString>+34 91 597 47 70</gco:CharacterString>
+                            </gmd:facsimile>
+                        </gmd:CI_Telephone>
+                    </gmd:phone>
+                    <gmd:address>
+                        <gmd:CI_Address>
+                            <gmd:deliveryPoint>
+                                <gco:CharacterString>Corazon de Maria, 8</gco:CharacterString>
+                            </gmd:deliveryPoint>
+                            <gmd:city>
+                                <gco:CharacterString>MADRID</gco:CharacterString>
+                            </gmd:city>
+                            <gmd:postalCode>
+                                <gco:CharacterString>28002</gco:CharacterString>
+                            </gmd:postalCode>
+                            <gmd:country>
+                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                            </gmd:country>
+                            <gmd:electronicMailAddress>
+                                <gco:CharacterString>cedo@ieo.es</gco:CharacterString>
+                            </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                    </gmd:address>
+                    <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                            <gmd:linkage>
+                                <gmd:URL>http://www.ieo.es</gmd:URL>
+                            </gmd:linkage>
+                        </gmd:CI_OnlineResource>
+                    </gmd:onlineResource>
+                </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</gmd:CI_RoleCode>
+            </gmd:role>
+        </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+        <gco:Date>2021-03-21</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+        <gco:CharacterString>ISO 19115/SeaDataNet profile</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+        <gco:CharacterString>1.0</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+            <gmd:referenceSystemIdentifier>
+                <gmd:RS_Identifier>
+                    <gmd:authority>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaDataNet geographic co-ordinate reference frames</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>L10</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2011-03-03</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:edition>
+                                <gco:CharacterString>3</gco:CharacterString>
+                            </gmd:edition>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:L10</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:authority>
+                    <gmd:code>
+                        <sdn:SDN_CRSCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CRSCode" codeListValue="4326" codeSpace="SeaDataNet">World Geodetic System 84</sdn:SDN_CRSCode>
+                    </gmd:code>
+                </gmd:RS_Identifier>
+            </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:metadataExtensionInfo xlink:href="https://schemas.seadatanet.org/Standards-Software/Metadata-formats/csrExtensionInformation.xml"/>
+    <gmd:identificationInfo>
+        <sdn:SDN_DataIdentification gco:isoType="MD_DataIdentification_Type">
+            <gmd:citation>
+                <gmd:CI_Citation>
+                    <gmd:title>
+                        <gco:CharacterString>DEMERSALES 2020</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:alternateTitle>
+                        <gco:CharacterString>29MO202009170</gco:CharacterString>
+                    </gmd:alternateTitle>
+                    <gmd:date>
+                        <gmd:CI_Date>
+                            <gmd:date>
+                                <gco:Date>2020-12-17</gco:Date>
+                            </gmd:date>
+                            <gmd:dateType>
+                                <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                            </gmd:dateType>
+                        </gmd:CI_Date>
+                    </gmd:date>
+                    <gmd:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn:SDN:CSR:LOCAL:29MO202009170</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmd:identifier>
+                    <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                            <gmd:organisationName>
+                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                            </gmd:organisationName>
+                            <gmd:contactInfo>
+                                <gmd:CI_Contact>
+                                    <gmd:phone>
+                                        <gmd:CI_Telephone>
+                                            <gmd:voice>
+                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                            </gmd:voice>
+                                            <gmd:facsimile>
+                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                            </gmd:facsimile>
+                                        </gmd:CI_Telephone>
+                                    </gmd:phone>
+                                    <gmd:address>
+                                        <gmd:CI_Address>
+                                            <gmd:deliveryPoint>
+                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                            </gmd:deliveryPoint>
+                                            <gmd:city>
+                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                            </gmd:city>
+                                            <gmd:postalCode>
+                                                <gco:CharacterString>39004</gco:CharacterString>
+                                            </gmd:postalCode>
+                                            <gmd:country>
+                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                            </gmd:country>
+                                            <gmd:electronicMailAddress>
+                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                            </gmd:electronicMailAddress>
+                                        </gmd:CI_Address>
+                                    </gmd:address>
+                                    <gmd:onlineResource>
+                                        <gmd:CI_OnlineResource>
+                                            <gmd:linkage>
+                                                <gmd:URL>http://www.ieo.es/santander</gmd:URL>
+                                            </gmd:linkage>
+                                        </gmd:CI_OnlineResource>
+                                    </gmd:onlineResource>
+                                </gmd:CI_Contact>
+                            </gmd:contactInfo>
+                            <gmd:role>
+                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="originator" codeSpace="ISOTC211/19115">originator</gmd:CI_RoleCode>
+                            </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                    </gmd:citedResponsibleParty>
+                </gmd:CI_Citation>
+            </gmd:citation>
+            <gmd:abstract>
+                <gco:CharacterString>Getting the spatial distribution and abundance indices of benthic and demersal fauna of the continental shelf of Galicia and Cantabrian Sea. Hydrographic survey of the neritic zone led to its influence on the distribution of species. Sampling using a box corer to obtain granulometrics indices of sediment.</gco:CharacterString>
+            </gmd:abstract>
+            <gmd:pointOfContact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:individualName>
+                        <gco:CharacterString>Antonio Punzón</gco:CharacterString>
+                    </gmd:individualName>
+                    <gmd:organisationName>
+                        <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                    </gmd:organisationName>
+                    <gmd:contactInfo>
+                        <gmd:CI_Contact>
+                            <gmd:phone>
+                                <gmd:CI_Telephone>
+                                    <gmd:voice>
+                                        <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                    </gmd:voice>
+                                    <gmd:facsimile>
+                                        <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                    </gmd:facsimile>
+                                </gmd:CI_Telephone>
+                            </gmd:phone>
+                            <gmd:address>
+                                <gmd:CI_Address>
+                                    <gmd:deliveryPoint>
+                                        <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:city>
+                                        <gco:CharacterString>Santander</gco:CharacterString>
+                                    </gmd:city>
+                                    <gmd:postalCode>
+                                        <gco:CharacterString>39004</gco:CharacterString>
+                                    </gmd:postalCode>
+                                    <gmd:country>
+                                        <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                    </gmd:country>
+                                    <gmd:electronicMailAddress>
+                                        <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                    </gmd:electronicMailAddress>
+                                </gmd:CI_Address>
+                            </gmd:address>
+                        </gmd:CI_Contact>
+                    </gmd:contactInfo>
+                    <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</gmd:CI_RoleCode>
+                    </gmd:role>
+                </gmd:CI_ResponsibleParty>
+            </gmd:pointOfContact>
+            <gmd:pointOfContact>
+                <gmd:CI_ResponsibleParty>
+                    <gmd:individualName>
+                        <gco:CharacterString>José Manuel González Irusta</gco:CharacterString>
+                    </gmd:individualName>
+                    <gmd:organisationName>
+                        <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                    </gmd:organisationName>
+                    <gmd:contactInfo>
+                        <gmd:CI_Contact>
+                            <gmd:phone>
+                                <gmd:CI_Telephone>
+                                    <gmd:voice>
+                                        <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                    </gmd:voice>
+                                    <gmd:facsimile>
+                                        <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                    </gmd:facsimile>
+                                </gmd:CI_Telephone>
+                            </gmd:phone>
+                            <gmd:address>
+                                <gmd:CI_Address>
+                                    <gmd:deliveryPoint>
+                                        <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                    </gmd:deliveryPoint>
+                                    <gmd:city>
+                                        <gco:CharacterString>Santander</gco:CharacterString>
+                                    </gmd:city>
+                                    <gmd:postalCode>
+                                        <gco:CharacterString>39004</gco:CharacterString>
+                                    </gmd:postalCode>
+                                    <gmd:country>
+                                        <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                    </gmd:country>
+                                    <gmd:electronicMailAddress>
+                                        <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                    </gmd:electronicMailAddress>
+                                </gmd:CI_Address>
+                            </gmd:address>
+                        </gmd:CI_Contact>
+                    </gmd:contactInfo>
+                    <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</gmd:CI_RoleCode>
+                    </gmd:role>
+                </gmd:CI_ResponsibleParty>
+            </gmd:pointOfContact>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <gco:CharacterString>Oceanographic geographical features</gco:CharacterString>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="SeaDataNet">theme</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2008-06-01</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_MarsdenCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_MarsdenCode" codeListValue="145" codeSpace="SeaDataNet">145</sdn:SDN_MarsdenCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="marsden_square" codeSpace="SeaDataNet">marsden_square</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>Ten-degree Marsden Squares</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C37</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-08-03</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C37</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_PortCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_PortCode" codeListValue="BSH263" codeSpace="SeaDataNet">Vigo</sdn:SDN_PortCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="departure_place" codeSpace="SeaDataNet">departure_place</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaDataNet Ports Gazetteer</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C38</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-09-20</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C38</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_PortCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_PortCode" codeListValue="BSH189" codeSpace="SeaDataNet">Santander</sdn:SDN_PortCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="arrival_place" codeSpace="SeaDataNet">arrival_place</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaDataNet Ports Gazetteer</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C38</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-09-20</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C38</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="departure_country" codeSpace="SeaDataNet">departure_country</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>International Standards Organisation countries</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C32</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-08-22</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C32</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="arrival_country" codeSpace="SeaDataNet">arrival_country</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>International Standards Organisation countries</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C32</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-08-22</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C32</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_PlatformCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_PlatformCode" codeListValue="29MO" codeSpace="SeaDataNet">Miguel Oliver</sdn:SDN_PlatformCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="platform" codeSpace="SeaDataNet">platform</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>ICES Platform Codes</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C17</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-05-14</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C17</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_PlatformCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_PlatformCategoryCode" codeListValue="31" codeSpace="SeaDataNet">research vessel</sdn:SDN_PlatformCategoryCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="platform_class" codeSpace="SeaDataNet">platform_class</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaVoX Platform Categories</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>L06</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-01-13</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:L06</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_WaterBodyCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_WaterBodyCode" codeListValue="SVX00015" codeSpace="SeaDataNet">Northeast Atlantic Ocean (40W)</sdn:SDN_WaterBodyCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="SeaDataNet">place</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaVoX salt and fresh water body gazetteer</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>C19</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-03-01</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:C19</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="ZBTX" codeSpace="SeaDataNet">Zoobenthos taxonomic abundance</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="PSAL" codeSpace="SeaDataNet">Salinity of the water column</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="BRDD" codeSpace="SeaDataNet">Bird taxonomy-related abundance per unit area of surface</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="AYMD" codeSpace="SeaDataNet">Date and time</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="CDTA" codeSpace="SeaDataNet">Air temperature</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="BRDA" codeSpace="SeaDataNet">Bird counts</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FATM" codeSpace="SeaDataNet">Fish morphology, age and physiology</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FREP" codeSpace="SeaDataNet">Fish reproduction</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="STOM" codeSpace="SeaDataNet">Concentration of organic matter in sediments</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="BDRV" codeSpace="SeaDataNet">Biodiversity indices</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FABD" codeSpace="SeaDataNet">Fauna abundance per unit area of the bed</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="LITT" codeSpace="SeaDataNet">Litter abundance and type</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="MFAB" codeSpace="SeaDataNet">Zoobenthos generic abundance</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FATX" codeSpace="SeaDataNet">Fish abundance in water bodies</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="EWSB" codeSpace="SeaDataNet">Wind strength and direction</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="ZOOB" codeSpace="SeaDataNet">Zoobenthos taxonomy-related counts</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FCNT" codeSpace="SeaDataNet">Fish taxonomy-related counts</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="CSLR" codeSpace="SeaDataNet">Solar Radiation</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="MNGS" codeSpace="SeaDataNet">Sediment grain size parameters</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="GP085" codeSpace="SeaDataNet">Fish behaviour</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="GP088" codeSpace="SeaDataNet">Bird behaviour</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="ZWTX" codeSpace="SeaDataNet">Zoobenthos taxonomy-related wet weight biomass per unit area of the bed</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FIBM" codeSpace="SeaDataNet">Fish biomass in water bodies</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="TEMP" codeSpace="SeaDataNet">Temperature of the water column</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="FBAB" codeSpace="SeaDataNet">Fish taxonomy-related abundance per unit area of the bed</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_ParameterDiscoveryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_ParameterDiscoveryCode" codeListValue="PTDZ" codeSpace="SeaDataNet">Temperature variation in the water column</sdn:SDN_ParameterDiscoveryCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="parameter" codeSpace="SeaDataNet">parameter</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>BODC Parameter Discovery Vocabulary</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>P02</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-09-25</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:P02</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="133" codeSpace="SeaDataNet">thermosalinographs</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="LAB13" codeSpace="SeaDataNet">balances and scales</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="113" codeSpace="SeaDataNet">fluorometers</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="102" codeSpace="SeaDataNet">meteorological packages</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="301" codeSpace="SeaDataNet">satellite positioning systems</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="91" codeSpace="SeaDataNet">observers</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="60" codeSpace="SeaDataNet">sediment dredges</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="61" codeSpace="SeaDataNet">demersal trawl nets</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="130" codeSpace="SeaDataNet">CTD</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:keyword>
+                        <sdn:SDN_DeviceCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DeviceCategoryCode" codeListValue="64" codeSpace="SeaDataNet">active fishing gear</sdn:SDN_DeviceCategoryCode>
+                    </gmd:keyword>
+                    <gmd:type>
+                        <gmd:MD_KeywordTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="instrument" codeSpace="SeaDataNet">instrument</gmd:MD_KeywordTypeCode>
+                    </gmd:type>
+                    <gmd:thesaurusName>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>SeaDataNet device categories</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>L05</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2007-03-01</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                            <gmd:identifier>
+                                <gmd:MD_Identifier xsi:type="gmd:RS_Identifier_Type">
+                                    <gmd:code>
+                                        <gco:CharacterString>https://www.seadatanet.org/urnurl/SDN:L05</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:identifier>
+                        </gmd:CI_Citation>
+                    </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+            </gmd:descriptiveKeywords>
+            <gmd:resourceConstraints>
+                <gmd:MD_Constraints>
+                    <gmd:useLimitation>
+                        <gco:CharacterString>Not applicable</gco:CharacterString>
+                    </gmd:useLimitation>
+                </gmd:MD_Constraints>
+            </gmd:resourceConstraints>
+            <gmd:resourceConstraints>
+                <gmd:MD_LegalConstraints>
+                    <gmd:accessConstraints>
+                        <gmd:MD_RestrictionCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" codeSpace="ISOTC211/19115">otherRestrictions</gmd:MD_RestrictionCode>
+                    </gmd:accessConstraints>
+                    <gmd:otherConstraints>
+                        <gmx:Anchor xlink:href="https://www.seadatanet.org/urnurl/SDN:L08::RS">by negotiation</gmx:Anchor>
+                    </gmd:otherConstraints>
+                </gmd:MD_LegalConstraints>
+            </gmd:resourceConstraints>
+            <gmd:spatialRepresentationType>
+                <gmd:MD_SpatialRepresentationTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</gmd:MD_SpatialRepresentationTypeCode>
+            </gmd:spatialRepresentationType>
+            <gmd:language>
+                <gmd:LanguageCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#LanguageCode" codeListValue="eng" codeSpace="ISO 639-2">English</gmd:LanguageCode>
+            </gmd:language>
+            <gmd:characterSet>
+                <gmd:MD_CharacterSetCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
+            </gmd:characterSet>
+            <gmd:topicCategory>
+                <gmd:MD_TopicCategoryCode>oceans</gmd:MD_TopicCategoryCode>
+            </gmd:topicCategory>
+            <gmd:extent>
+                <gmd:EX_Extent>
+                    <gmd:geographicElement>
+                        <gmd:EX_GeographicDescription>
+                            <gmd:geographicIdentifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>The Cruise covers 45,5 miles from Spanish coast.</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:geographicIdentifier>
+                        </gmd:EX_GeographicDescription>
+                    </gmd:geographicElement>
+                    <gmd:geographicElement>
+                        <gmd:EX_GeographicDescription>
+                            <gmd:geographicIdentifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>Northeast Atlantic Ocean (40W)</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmd:geographicIdentifier>
+                        </gmd:EX_GeographicDescription>
+                    </gmd:geographicElement>
+                    <gmd:geographicElement>
+                        <gmd:EX_GeographicBoundingBox>
+                            <gmd:westBoundLongitude>
+                                <gco:Decimal>-10.000000</gco:Decimal>
+                            </gmd:westBoundLongitude>
+                            <gmd:eastBoundLongitude>
+                                <gco:Decimal>-1.200000</gco:Decimal>
+                            </gmd:eastBoundLongitude>
+                            <gmd:southBoundLatitude>
+                                <gco:Decimal>41.900000</gco:Decimal>
+                            </gmd:southBoundLatitude>
+                            <gmd:northBoundLatitude>
+                                <gco:Decimal>45.000000</gco:Decimal>
+                            </gmd:northBoundLatitude>
+                        </gmd:EX_GeographicBoundingBox>
+                    </gmd:geographicElement>
+                    <gmd:geographicElement>
+                        <gmd:EX_GeographicBoundingBox>
+                            <gmd:westBoundLongitude>
+                                <gco:Decimal>-10.000000</gco:Decimal>
+                            </gmd:westBoundLongitude>
+                            <gmd:eastBoundLongitude>
+                                <gco:Decimal>0.000000</gco:Decimal>
+                            </gmd:eastBoundLongitude>
+                            <gmd:southBoundLatitude>
+                                <gco:Decimal>40.000000</gco:Decimal>
+                            </gmd:southBoundLatitude>
+                            <gmd:northBoundLatitude>
+                                <gco:Decimal>50.000000</gco:Decimal>
+                            </gmd:northBoundLatitude>
+                        </gmd:EX_GeographicBoundingBox>
+                    </gmd:geographicElement>
+                    <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                            <gmd:extent>
+                                <gml:TimePeriod gml:id="d1e1079">
+                                    <gml:beginPosition>2020-09-17T08:00:00Z</gml:beginPosition>
+                                    <gml:endPosition>2020-10-21T12:00:00Z</gml:endPosition>
+                                </gml:TimePeriod>
+                            </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                    </gmd:temporalElement>
+                </gmd:EX_Extent>
+            </gmd:extent>
+        </sdn:SDN_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+            <gmd:distributionFormat>
+                <gmd:MD_Format>
+                    <gmd:name>
+                        <gco:CharacterString>XML</gco:CharacterString>
+                    </gmd:name>
+                    <gmd:version>
+                        <gco:CharacterString>1</gco:CharacterString>
+                    </gmd:version>
+                </gmd:MD_Format>
+            </gmd:distributionFormat>
+        </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+            <gmd:scope>
+                <gmd:DQ_Scope>
+                    <gmd:level>
+                        <gmd:MD_ScopeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_ScopeCode" codeListValue="series" codeSpace="ISOTC211/19115">series</gmd:MD_ScopeCode>
+                    </gmd:level>
+                </gmd:DQ_Scope>
+            </gmd:scope>
+            <gmd:report>
+                <gmd:DQ_DomainConsistency>
+                    <gmd:result>
+                        <gmd:DQ_ConformanceResult>
+                            <gmd:specification>
+                                <gmd:CI_Citation>
+                                    <gmd:title>
+                                        <gco:CharacterString>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                                    </gmd:title>
+                                    <gmd:date>
+                                        <gmd:CI_Date>
+                                            <gmd:date>
+                                                <gco:Date>2010-12-08</gco:Date>
+                                            </gmd:date>
+                                            <gmd:dateType>
+                                                <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+                                            </gmd:dateType>
+                                        </gmd:CI_Date>
+                                    </gmd:date>
+                                </gmd:CI_Citation>
+                            </gmd:specification>
+                            <gmd:explanation>
+                                <gco:CharacterString>See the referenced specification</gco:CharacterString>
+                            </gmd:explanation>
+                            <gmd:pass>
+                                <gco:Boolean>true</gco:Boolean>
+                            </gmd:pass>
+                        </gmd:DQ_ConformanceResult>
+                    </gmd:result>
+                </gmd:DQ_DomainConsistency>
+            </gmd:report>
+            <gmd:report>
+                <gmd:DQ_DomainConsistency>
+                    <gmd:result>
+                        <gmd:DQ_ConformanceResult>
+                            <gmd:specification>
+                                <gmd:CI_Citation>
+                                    <gmd:title>
+                                        <gco:CharacterString>COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata</gco:CharacterString>
+                                    </gmd:title>
+                                    <gmd:date>
+                                        <gmd:CI_Date>
+                                            <gmd:date>
+                                                <gco:Date>2008-12-04</gco:Date>
+                                            </gmd:date>
+                                            <gmd:dateType>
+                                                <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</gmd:CI_DateTypeCode>
+                                            </gmd:dateType>
+                                        </gmd:CI_Date>
+                                    </gmd:date>
+                                </gmd:CI_Citation>
+                            </gmd:specification>
+                            <gmd:explanation>
+                                <gco:CharacterString>See the referenced specification</gco:CharacterString>
+                            </gmd:explanation>
+                            <gmd:pass>
+                                <gco:Boolean>true</gco:Boolean>
+                            </gmd:pass>
+                        </gmd:DQ_ConformanceResult>
+                    </gmd:result>
+                </gmd:DQ_DomainConsistency>
+            </gmd:report>
+            <gmd:lineage>
+                <gmd:LI_Lineage>
+                    <gmd:statement>
+                        <gco:CharacterString>The data centres apply standard data quality control procedures on all data that the centres manage. Ask the data centre for details.</gco:CharacterString>
+                    </gmd:statement>
+                </gmd:LI_Lineage>
+            </gmd:lineage>
+        </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+    <gmi:acquisitionInformation>
+        <gmi:MI_AcquisitionInformation>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.G02.1">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.G02</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:function>
+                        <gco:CharacterString>Sediment Collector Attached to the net</gco:CharacterString>
+                    </gmi:function>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="G02.1">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>G02</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="G02" codeSpace="SeaDataNet">Grab</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1402</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:description>
+                                        <gco:CharacterString>Sediment Collector Attached to the net</gco:CharacterString>
+                                    </gmi:description>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Jose Manuel Gonzalez Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1402" codeSpace="SeaDataNet">IEO, Santander Experimental Aquaculture Facilities</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 348 397</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 323 486</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Barrio Corbanera, s/n</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Monte (Cantabria)</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39012</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="G02"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.G02.1">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.G02</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>14.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU005" codeSpace="SeaDataNet">hauls</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.G01.2">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.G01</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:function>
+                        <gco:CharacterString>BOX CORER</gco:CharacterString>
+                    </gmi:function>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="G01.2">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>G01</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="G01" codeSpace="SeaDataNet">Dredge</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1403</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:description>
+                                        <gco:CharacterString>BOX CORER</gco:CharacterString>
+                                    </gmi:description>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Juan Fernandez Feijoo</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1403" codeSpace="SeaDataNet">IEO, La Coruna Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 981 218 151 </gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 981 229 077</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Paseo Marítimo Alcalde Francisco Vázquez, 10
+
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>A Coruna</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>15001</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieo.coruna@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="G01"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.G01.2">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.G01</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>0.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU006" codeSpace="SeaDataNet">samples</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B11.3">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B11</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B11.3">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B11</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B11" codeSpace="SeaDataNet">Nekton</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B11"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B11.3">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B11</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B90.4">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B90</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B90.4">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B90</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B90" codeSpace="SeaDataNet">Other biological/fisheries meas.</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B90"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B90.4">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B90</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B18.5">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B18</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B18.5">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B18</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B18" codeSpace="SeaDataNet">Zoobenthos</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B18"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B18.5">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B18</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.H10.6">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.H10</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:function>
+                        <gco:CharacterString>CTD SBE 25</gco:CharacterString>
+                    </gmi:function>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="H10.6">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>H10</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="H10" codeSpace="SeaDataNet">CTD stations</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:description>
+                                        <gco:CharacterString>CTD SBE 25</gco:CharacterString>
+                                    </gmi:description>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="H10"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.H10.6">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.H10</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>120.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU001" codeSpace="SeaDataNet">stations</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B25.7">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B25</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B25.7">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B25</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B25" codeSpace="SeaDataNet">Birds</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::2115</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Jose Manuel Arcos</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="2115" codeSpace="SeaDataNet">Seo/Birdlife</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 914 340 910</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 914 340 911</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>c/ Melquiades Biencinto 34</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Madrid</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>28053</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>seo@seo.org</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B25"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B25.7">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B25</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>0.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B26.8">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B26</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B26.8">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B26</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B26" codeSpace="SeaDataNet">Mammals &amp; reptiles</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::2115</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Jose Manuel Arcos</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="2115" codeSpace="SeaDataNet">Seo/Birdlife</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 914 340 910</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 914 340 911</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>c/ Melquiades Biencinto 34</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Madrid</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>28053</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>seo@seo.org</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B26"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B26.8">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B26</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>0.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B20.9">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B20</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B20.9">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B20</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B20" codeSpace="SeaDataNet">Molluscs</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B20"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B20.9">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B20</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B21.10">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B21</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B21.10">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B21</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B21" codeSpace="SeaDataNet">Crustaceans</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B21"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B21.10">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B21</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.B19.11">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.B19</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="B19.11">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>B19</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="B19" codeSpace="SeaDataNet">Demersal fish</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="B19"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.B19.11">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.B19</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>123.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU005" codeSpace="SeaDataNet">hauls</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:objective>
+                <sdn:SDN_Objective gco:isoType="MI_Objective_Type" id="urn.SDN.CSR.LOCAL.29MO202009170.objective.H11.12">
+                    <gmi:identifier>
+                        <gmd:MD_Identifier>
+                            <gmd:code>
+                                <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.objective.H11</gco:CharacterString>
+                            </gmd:code>
+                        </gmd:MD_Identifier>
+                    </gmi:identifier>
+                    <gmi:type>
+                        <gmi:MI_ObjectiveTypeCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ObjectiveTypeCode" codeListValue="instantaneousCollection" codeSpace="ISOTC211/19115-2">instantaneousCollection</gmi:MI_ObjectiveTypeCode>
+                    </gmi:type>
+                    <gmi:sensingInstrument>
+                        <gmi:MI_Instrument id="H11.12">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>H11</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:type>
+                                <sdn:SDN_DataCategoryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_DataCategoryCode" codeListValue="H11" codeSpace="SeaDataNet">Subsurface meas. underway (T,S)</sdn:SDN_DataCategoryCode>
+                            </gmi:type>
+                            <gmi:mountedOn>
+                                <gmi:MI_Platform>
+                                    <gmi:identifier>
+                                        <gmd:MD_Identifier>
+                                            <gmd:code>
+                                                <gco:CharacterString>SDN:EDMO::1401</gco:CharacterString>
+                                            </gmd:code>
+                                        </gmd:MD_Identifier>
+                                    </gmi:identifier>
+                                    <gmi:sponsor>
+                                        <gmd:CI_ResponsibleParty>
+                                            <gmd:individualName>
+                                                <gco:CharacterString>Antonio Punzón, José Manuel González Irusta</gco:CharacterString>
+                                            </gmd:individualName>
+                                            <gmd:organisationName>
+                                                <sdn:SDN_EDMOCode codeList="https://edmo.seadatanet.org/isocodelists/edmo-edmerp-codelists.php#SDN_EDMOCode" codeListValue="1401" codeSpace="SeaDataNet">IEO, Santander Oceanographic Centre</sdn:SDN_EDMOCode>
+                                            </gmd:organisationName>
+                                            <gmd:contactInfo>
+                                                <gmd:CI_Contact>
+                                                    <gmd:phone>
+                                                        <gmd:CI_Telephone>
+                                                            <gmd:voice>
+                                                                <gco:CharacterString>+34 942 291 716</gco:CharacterString>
+                                                            </gmd:voice>
+                                                            <gmd:facsimile>
+                                                                <gco:CharacterString>+34 942 275 072</gco:CharacterString>
+                                                            </gmd:facsimile>
+                                                        </gmd:CI_Telephone>
+                                                    </gmd:phone>
+                                                    <gmd:address>
+                                                        <gmd:CI_Address>
+                                                            <gmd:deliveryPoint>
+                                                                <gco:CharacterString>Promontorio San Martin, s/n
+</gco:CharacterString>
+                                                            </gmd:deliveryPoint>
+                                                            <gmd:city>
+                                                                <gco:CharacterString>Santander</gco:CharacterString>
+                                                            </gmd:city>
+                                                            <gmd:postalCode>
+                                                                <gco:CharacterString>39004</gco:CharacterString>
+                                                            </gmd:postalCode>
+                                                            <gmd:country>
+                                                                <sdn:SDN_CountryCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CountryCode" codeListValue="ES" codeSpace="SeaDataNet">Spain</sdn:SDN_CountryCode>
+                                                            </gmd:country>
+                                                            <gmd:electronicMailAddress>
+                                                                <gco:CharacterString>ieosantander@ieo.es</gco:CharacterString>
+                                                            </gmd:electronicMailAddress>
+                                                        </gmd:CI_Address>
+                                                    </gmd:address>
+                                                </gmd:CI_Contact>
+                                            </gmd:contactInfo>
+                                            <gmd:role>
+                                                <gmd:CI_RoleCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode" codeListValue="principalInvestigator" codeSpace="ISOTC211/19115">principalInvestigator</gmd:CI_RoleCode>
+                                            </gmd:role>
+                                        </gmd:CI_ResponsibleParty>
+                                    </gmi:sponsor>
+                                    <gmi:instrument xlink:href="H11"/>
+                                </gmi:MI_Platform>
+                            </gmi:mountedOn>
+                        </gmi:MI_Instrument>
+                    </gmi:sensingInstrument>
+                    <gmi:objectiveOccurrence>
+                        <gmi:MI_Event id="urn.SDN.CSR.LOCAL.29MO202009170.event.H11.12">
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>urn.SDN.CSR.LOCAL.29MO202009170.event.H11</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="acquisition" codeSpace="ISOTC211/19115-2">acquisition</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="instantaneous" codeSpace="ISOTC211/19115-2">instantaneous</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:objectiveOccurrence>
+                    <sdn:SDN_SamplingActivity>
+                        <sdn:quantity>35.000000</sdn:quantity>
+                        <sdn:unit>
+                            <sdn:SDN_CSRUnitCode codeList="http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/cdicsrCodeList.xml#SDN_CSRUnitCode" codeListValue="CSRU002" codeSpace="SeaDataNet">days</sdn:SDN_CSRUnitCode>
+                        </sdn:unit>
+                    </sdn:SDN_SamplingActivity>
+                </sdn:SDN_Objective>
+            </gmi:objective>
+            <gmi:operation>
+                <gmi:MI_Operation id="urn.SDN.CSR.LOCAL.29MO202009170">
+                    <gmi:description>
+                        <gco:CharacterString>Getting the spatial distribution and abundance indices of benthic and demersal fauna of the continental shelf of Galicia and Cantabrian Sea. Hydrographic survey of the neritic zone led to its influence on the distribution of species. Sampling using a box corer to obtain granulometrics indices of sediment.</gco:CharacterString>
+                    </gmi:description>
+                    <gmi:citation>
+                        <gmd:CI_Citation>
+                            <gmd:title>
+                                <gco:CharacterString>DEMERSALES 2020</gco:CharacterString>
+                            </gmd:title>
+                            <gmd:alternateTitle>
+                                <gco:CharacterString>29MO202009170</gco:CharacterString>
+                            </gmd:alternateTitle>
+                            <gmd:date>
+                                <gmd:CI_Date>
+                                    <gmd:date>
+                                        <gco:Date>2020-12-17</gco:Date>
+                                    </gmd:date>
+                                    <gmd:dateType>
+                                        <gmd:CI_DateTypeCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_DateTypeCode" codeListValue="creation" codeSpace="ISOTC211/19115">creation</gmd:CI_DateTypeCode>
+                                    </gmd:dateType>
+                                </gmd:CI_Date>
+                            </gmd:date>
+                        </gmd:CI_Citation>
+                    </gmi:citation>
+                    <gmi:status>
+                        <gmd:MD_ProgressCode codeList="https://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#MD_ProgressCode" codeListValue="completed" codeSpace="ISOTC211/19115">completed</gmd:MD_ProgressCode>
+                    </gmi:status>
+                    <gmi:significantEvent>
+                        <gmi:MI_Event>
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>cruise-start</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="wayPoint" codeSpace="ISOTC211/19115-2">wayPoint</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="start" codeSpace="ISOTC211/19115-2">start</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-09-17T08:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:significantEvent>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.G02.1"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.G01.2"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B11.3"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B90.4"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B18.5"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.H10.6"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B25.7"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B26.8"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B20.9"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B21.10"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.B19.11"/>
+                    <gmi:significantEvent xlink:href="urn.SDN.CSR.LOCAL.29MO202009170.event.H11.12"/>
+                    <gmi:significantEvent>
+                        <gmi:MI_Event>
+                            <gmi:identifier>
+                                <gmd:MD_Identifier>
+                                    <gmd:code>
+                                        <gco:CharacterString>cruise-end</gco:CharacterString>
+                                    </gmd:code>
+                                </gmd:MD_Identifier>
+                            </gmi:identifier>
+                            <gmi:trigger>
+                                <gmi:MI_TriggerCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_TriggerCode" codeListValue="manual" codeSpace="ISOTC211/19115-2">manual</gmi:MI_TriggerCode>
+                            </gmi:trigger>
+                            <gmi:context>
+                                <gmi:MI_ContextCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_ContextCode" codeListValue="wayPoint" codeSpace="ISOTC211/19115-2">wayPoint</gmi:MI_ContextCode>
+                            </gmi:context>
+                            <gmi:sequence>
+                                <gmi:MI_SequenceCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmiCodelists.xml#MI_SequenceCode" codeListValue="end" codeSpace="ISOTC211/19115-2">end</gmi:MI_SequenceCode>
+                            </gmi:sequence>
+                            <gmi:time>
+                                <gco:DateTime>2020-10-21T12:00:00Z</gco:DateTime>
+                            </gmi:time>
+                        </gmi:MI_Event>
+                    </gmi:significantEvent>
+                </gmi:MI_Operation>
+            </gmi:operation>
+        </gmi:MI_AcquisitionInformation>
+    </gmi:acquisitionInformation>
+</MI_Metadata>
