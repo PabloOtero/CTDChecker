@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    -->
+    
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/mdb.min.css') }}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+  
+  
+  <title>IEO CTD Checker</title>
+	
+	
+	
+  </head>
+  <body>
+  
+
+	<div class="jumbotron" style="padding: 2rem 2rem; margin-bottom: 0;">
+	  <h1 class="display-4"><img src="../static/img/ieo.png" style="height: 80px">IEO CTD Checker 	  	  <a class="btn btn-info btn-md" href="http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker" role="button">Learn more</a></h1>
+	  <p class="lead">Quality control check of CTD data files and conversion to <a href="https://www.seadatanet.org/Standards/Data-Transport-Formats">ASCII MedAtlas format</a>. Figures and metadata (<a href="https://www.seadatanet.org/Metadata/CDI-Common-Data-Index">CDIs</a>) are also generated.</p>
+	</div>
+
+        <!-- Horizontal Steppers -->
+    <div class="row">
+      <div class="col-md-12">
+    
+        <!-- Stepers Wrapper -->
+        <ul class="stepper stepper-horizontal" style="padding:inherit; margin:unset;">
+    
+          <!-- First Step -->
+          <li class="completed">
+            <a href="#!">
+              <span class="circle">1</span>
+              <span class="label">Select files</span>
+            </a>
+          </li>
+    
+          <!-- Second Step -->
+          <li class="step">
+            <a href="#!">
+              <span class="circle">2</span>
+              <span class="label">Check report</span>
+            </a>
+          </li>
+    
+          <!-- Third Step -->
+          <li class="step">
+            <a href="#!">
+              <span class="circle"><i class="fas fa-thumbs-up"></i></span>
+              <span class="label">Download results</span>
+            </a>
+          </li>
+    
+        </ul>
+        <!-- /.Stepers Wrapper -->
+    
+      </div>
+    </div>
+    <!-- /.Horizontal Steppers -->
+
+	
+
+    <div class="row">
+	
+		<div class="col-3">
+		<div class="d-flex justify-content-center">
+			<div class="card" style="width: 18rem;">
+			  <img src="./static/img/ctd.jpg" class="card-img-top" alt="...">
+ <div class="card-header">Keep in mind!</div>
+  <div class="card-body">
+    <!--<h5 class="card-title">Light card title</h5>-->
+    <p class="card-text">This is a beta version of an application running on a server. <a href="https://flask.palletsprojects.com/en/1.1.x/errorhandling/">Applications fail, servers fail.</a> You shouldn't wait more than 5 minutes to get your results. A known bug is overloading the server (limited to 64Mb), in this case split your uploads is a good solution. If the error persists, consider reporting it to us and/or running the <a href="https://github.com/PabloOtero/CTDChecker">code</a> locally.</p>
+  </div>
+			</div>
+		</div>	
+		</div>
+
+      <div class="col-9 justify-content-md-center">		   
+		<!--<h2>Select files</h2>-->
+			
+		<div class="container">	
+			
+		<form method="post" action="./" enctype="multipart/form-data">
+ 			
+ 			
+            <input type="radio" name="option" value="1" onclick="show1();">
+            <label>Only check data in cnv files</label>
+              <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
+                  title="Upload all your cnv files at once. A new column with flags will be added to your data. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>                
+              <br>
+
+            
+            <input type="radio" name="option" value="2" onclick="show2();" checked="checked">
+            <label>Check data in cnv files, export to MedAtlas and generate SeaDataNet-complaint metadata</label>
+              <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
+                  title="Upload all your cnv files at once and also a CSR file. Your data will be converted to MedAtlas format with a new column with flags. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. A set of figures to help you interpret data will be generated, and also the associated metadata (once per cast). Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>          
+              <br>
+
+ 			<br>
+ 			
+			<div id="option1" class="input-group mb-3">
+			    <i><strong>Note</strong> that a Cruise Summary Report file (*.xml) is mandatory. If you don't have one, try a search in the 
+		           <a href="https://csr.seadatanet.org/">SeaDataNet database</a> and download the file as XML to your computer. </i>
+				<div class="custom-file">
+					<input type="file" name="file" class="custom-file-input" id="inputGroupFile01"/>
+					<label class="custom-file-label" for="inputGroupFile01">Choose CSR file (*.xml)</label>
+					<div id="file-upload-filename"></div>
+				</div>
+			</div>		
+			<div id="option2" class="input-group mb-3">
+				<div class="custom-file">
+					<input type="file" name="files[]" multiple="true" class="custom-file-input" id="inputGroupFile02"/>
+					<label class="custom-file-label" for="inputGroupFile02">Choose CTD file(s) (*.cnv)</label>
+				</div>
+			</div>
+			
+										
+			<div class="input-group-append">
+				<button class="btn btn-primary" onclick="showAlert();" id="myButton">Upload</button>
+				<button class="btn btn-primary" id="myButton2" style="display:none;" disabled><span class="spinner-border spinner-border-sm"></span> Processing files...</button>
+				<div class="container" style="display:none;" id="myAlert">
+					<div class="alert alert-warning">Don't close the browser. Please, be patient!</div>
+				</div>
+			</div>
+			<pre id="filelist" style="display:none;"></pre>
+		</form>			
+	</div>
+
+
+		<div class="container">
+		
+    		{% with messages = get_flashed_messages(with_categories=true) %}
+    		  {% if messages %}
+    			<ul class=flashes>
+    			{% for category, message in messages %}
+    				<div class="alert alert-{{ category }}">		
+    						 {{ message }}
+    				</div>		
+    			{% endfor %}
+    			</ul>
+    		  {% endif %}
+    		{% endwith %}
+    		{% block body %}{% endblock %}	
+					
+		</div>
+
+        </div>
+      </div>	
+	  
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue fixed-bottom">
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 By <a href="https://twitter.com/pablooterot?lang=es@PabloOteroT">Pablo Otero</a> for  <a href="http://www.ieo.es">Instituto Español de Oceanografía</a> in the frame of <a href="https://www.seadatanet.org/About-us/SeaDataCloud">SeaDataCloud</a>, grant agreement 730960, EU H2020 programme
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+
+
+
+	<script>
+		document.getElementById('inputGroupFile01').addEventListener('change', function(e) {
+			//get the file name
+			var fileName = $(this).val();
+			//replace the "Choose a file" label
+			$(this).next('.custom-file-label').html(fileName.replace("C:\\fakepath\\",""));
+		});
+	</script>
+
+	
+	<script>
+		document.getElementById('inputGroupFile02').addEventListener('change', function(e) {
+		  var list = document.getElementById('filelist');
+		  list.innerHTML = '';
+		  for (var i = 0; i < this.files.length; i++) {
+			list.innerHTML += (i + 1) + '. ' + this.files[i].name + '\n';
+		  }
+		  if (list.innerHTML == '') list.style.display = 'none';
+		  else list.style.display = 'block';
+		});
+	</script>	
+
+    <script>
+        function show1(){
+          document.getElementById('option2').style.display ='flex';
+          document.getElementById('option1').style.display = 'none';
+        }
+        function show2(){
+          document.getElementById('option1').style.display ='flex';
+          document.getElementById('option2').style.display = 'flex';
+        }
+    </script>
+
+    <script>
+		function showAlert(){
+		  $("#myButton").hide();
+		  $("#myButton2").show();
+		  $("#myAlert").css("display", "");
+		}	
+	</script>
+	
+     <script>
+    // Tooltips Initialization
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+     </script>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<!--<script src="{{ url_for('static', filename='main.js') }}"></script>-->
+  </body>
+</html>

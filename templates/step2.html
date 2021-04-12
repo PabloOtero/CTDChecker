@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    -->
+    
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/mdb.min.css') }}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+  
+  <style>
+    #map{ width: 100%; 
+          height: 300px; 
+          position: relative;
+          border-radius: 8px;
+          }
+		  
+	.legend {
+        line-height: 19px;
+        color: #555;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 6px 8px;
+        font: 13px/16px Verdana, Geneva, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+       }
+
+   .legend i {
+        width: 15px;
+        height: 15px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+      }
+
+    .circle {
+	float: left;
+	border: 1px solid #222;
+	border-radius: 50%;
+	}
+
+   .legend .colorcircle {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	margin-top: 0px;
+	}
+	.legend .circlepadding {
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.85);
+	}
+
+
+	
+  </style>
+  
+<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+  
+  
+  <title>IEO CTD Checker</title>
+  </head>
+  <body>
+
+	<div class="jumbotron" style="padding: 2rem 2rem; margin-bottom: 0;">
+	  <h1 class="display-4"><img src="../static/img/ieo.png" style="height: 80px">IEO CTD Checker 	  	  <a class="btn btn-info btn-md" href="http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker" role="button">Learn more</a></h1>
+	  <p class="lead">Quality control check of CTD data files and conversion to <a href="https://www.seadatanet.org/Standards/Data-Transport-Formats">ASCII MedAtlas format</a>. Figures and metadata (<a href="https://www.seadatanet.org/Metadata/CDI-Common-Data-Index">CDIs</a>) are also generated.</p>
+	</div>
+
+        <!-- Horizontal Steppers -->
+    <div class="row">
+      <div class="col-md-12">
+    
+        <!-- Stepers Wrapper -->
+        <ul class="stepper stepper-horizontal" style="padding:inherit; margin:unset;">
+    
+          <!-- First Step -->
+          <li class="step">
+            <a href="#!">
+              <span class="circle">1</span>
+              <span class="label">Select files</span>
+            </a>
+          </li>
+    
+          <!-- Second Step -->
+          <li class="completed">
+            <a href="#!">
+              <span class="circle">2</span>
+              <span class="label">Check report</span>
+            </a>
+          </li>
+    
+          <!-- Third Step -->
+          <li class="step">
+            <a href="#!">
+              <span class="circle"><i class="fas fa-thumbs-up"></i></span>
+              <span class="label">Download results</span>
+            </a>
+          </li>
+    
+        </ul>
+        <!-- /.Stepers Wrapper -->
+    
+      </div>
+    </div>
+    <!-- /.Horizontal Steppers -->
+
+    
+  
+    <div class="container" style="padding-bottom:100px">	  
+	
+        <div class="row">
+            <div class="col">
+                <div class="card example-1 scrollbar-ripe-malinka">
+                    <div class="card-body">
+                        <h4 id="section1"><strong>Summary report</strong></h4>			
+                		{% with messages = get_flashed_messages(with_categories=true) %}
+                		  {% if messages %}
+                			<ul class=flashes>
+                			{% for category, message in messages %}
+                				<div class="alert alert-{{ category }} p-0" style="font-size: small; margin-bottom: 0.5rem;">		
+                						 {{ message|safe }}
+                				</div>		
+                			{% endfor %}
+                			</ul>
+                		  {% endif %}
+                		{% endwith %}
+                		{% block body %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="map"></div>
+                <p class="font-italic text-right">Click at stations to know more</p>
+                <div class="text-center mt-2">
+        		    <p><a href="/step3" target="blank" class="btn btn-default"><i class="fas fa-sun pr-2 fa-2x" aria-hidden="true"></i>I'm happy. Next step!</a>
+        			   <a href="/" target="blank" class="btn btn-danger"><i class="fas fa-poo-storm pr-2 fa-2x" aria-hidden="true"></i>Start again</a></p>
+        		</div>
+            </div>
+        </div>
+      
+        
+    </div>
+	
+    <!-- Footer -->
+    <footer class="page-footer font-small blue fixed-bottom" style="position:inherit">
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 By <a href="https://twitter.com/pablooterot?lang=es@PabloOteroT">Pablo Otero</a> for  <a href="http://www.ieo.es">Instituto Español de Oceanografía</a> in the frame of <a href="https://www.seadatanet.org/About-us/SeaDataCloud">SeaDataCloud</a>, grant agreement 730960, EU H2020 programme
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	
+    <script>
+        function getColor(d) {
+            return d === 'On land'  ? "#f00" :
+                   d === 'On sea'  ? "#008000" : 
+    			           "#008000";
+        }
+      
+        L.mapbox.accessToken = 'pk.eyJ1IjoicG90ZXJvIiwiYSI6Il83WTdjdWcifQ.UOAJgokdVOxi0CWSEIWU0w';
+       
+        
+        var map = L.mapbox.map('map')
+            .setView([{{MEAN_COORDS[1]}}, {{MEAN_COORDS[0]}}], 6)
+            .addLayer(L.mapbox.styleLayer('mapbox://styles/potero/ckgai2owz0ygw1arvum7a9m4o'));
+    	  	
+    	// Object to store all stations and adjust the zoom
+        var stations = L.featureGroup().addTo(map);
+
+
+        var geojsonMarkerOptions_good = {
+                radius: 6,
+                fillColor: 'green',
+                color: 'green',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.5,
+              };
+        var geojsonMarkerOptions_bad = {
+                radius: 6,
+                fillColor: 'red',
+                color: 'red',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.5,
+              };
+
+     
+       // load circles
+        {% for position in COORDS %}
+    	
+    	    {% if position.onland %}
+                circle = new L.circleMarker([{{position.lat}}, {{position.lon}}], geojsonMarkerOptions_bad).bindPopup("<strong>{{position.name}}</strong><br>{{position.time}}<br>Latitude: {{position.lat}}<br>Longitude: {{position.lon}}<br>Bathymetry (m): {{position.bathymetry}}<br>Depth (on board): {{position.depth}}<br>Distance to coast (km): {{position.shoredistance}}").addTo(map);
+    		{% else %}
+                circle = new L.circleMarker([{{position.lat}}, {{position.lon}}], geojsonMarkerOptions_good).bindPopup("<strong>{{position.name}}</strong><br>{{position.time}}<br>Latitude: {{position.lat}}<br>Longitude: {{position.lon}}<br>Bathymetry (m): {{position.bathymetry}}<br>Depth (on board): {{position.depth}}<br>Distance to coast (km): {{position.shoredistance}}").addTo(map);		
+    		{% endif %}
+    		
+    		stations.addLayer(circle);
+    		
+        {% endfor %}
+    	
+    	// Adjust zoom to see all the circles
+    	map.fitBounds(stations.getBounds(), {padding: [50, 50]});
+    	
+    	
+    	// load legend
+    	var legend = L.control({position: 'bottomleft'});
+    		legend.onAdd = function (map) {
+    
+    		var div = L.DomUtil.create('div', 'info legend');
+    		labels = ['<strong>Stations</strong>'],
+    		categories = ['On land','On sea'];
+    
+    	    for (var i = 0; i < categories.length; i++) {
+    
+                div.innerHTML += 
+                labels.push(
+                    '<i class="circlepadding" style="background:' + getColor(categories[i]) + '"></i> ' +
+                (categories[i] ? categories[i] : '+'));
+    
+            }
+            div.innerHTML = labels.join('<br>');
+            return div;
+        };
+    	
+    	legend.addTo(map);
+
+    </script>	
+	
+	
+	
+  </body>
+</html>
