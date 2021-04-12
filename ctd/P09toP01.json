@@ -1,0 +1,86 @@
+{
+   "PRES":{
+      "name_IOC":"SEA PRESSURE sea surface=0",
+      "units_IOC":"decibar=10000 pascals",
+      "name_P01":"PRESPR01",
+      "name_P06":"UPDB",
+      "fractional_part": 0
+   },
+   "TEMP":{
+      "name_IOC":"SEA TEMPERATURE",
+      "units_IOC":"Celsius degree",
+      "name_P01":"TEMPPR01",
+      "name_P06":"UPAA",
+      "fractional_part": 3
+   },
+   "TE01":{
+      "name_IOC":"SEA TEMPERATURE",
+      "units_IOC":"Celsius degree",
+      "name_P01":"TEMPPR01",
+      "name_P06":"UPAA",
+      "fractional_part": 3
+   },
+   "TE02":{
+      "name_IOC":"SEA TEMPERATURE",
+      "units_IOC":"Celsius degree",
+      "name_P01":"TEMPPR02",
+      "name_P06":"UPAA",
+      "fractional_part": 3
+   },
+   "PSAL":{
+      "name_IOC":"PRACTICAL SALINITY",
+      "units_IOC":"P.S.U.",
+      "name_P01":"PSLTZZ01",
+      "name_P06":"UUUU",
+      "fractional_part": 4
+   },
+   "CNDC":{
+      "name_IOC":"ELECTRICAL CONDUCTIVITY",
+      "units_IOC":"millimho/centimeter",
+      "name_P01":"CNDCZZ01",
+      "name_P06":"UECA",
+      "fractional_part": 4
+   },
+   "DOX1":{
+      "name_IOC":"DISSOLVED OXYGEN",
+      "units_IOC":"ml/l",
+      "name_P01":"DOXYZZXX",
+      "name_P06":"UMLL",
+      "fractional_part": 2  
+   },
+   "DOX2":{
+      "name_IOC":"SEA PRESSURE sea surface=0",
+      "units_IOC":"micromole/kg",
+      "name_P01":"DOXMZZXX",
+      "name_P06":"KGUM",
+      "fractional_part": 2  
+   },
+   "OSAT":{
+      "name_IOC":"OXYGEN SATURATION",
+      "units_IOC":"%",
+      "name_P01":"OXYSZZ01",
+      "name_P06":"UPCT",
+      "fractional_part": 3
+   },
+   "FLU2":{
+      "name_IOC":"FLUORESCENCE",
+      "units_IOC":"milligram/m3",
+      "name_P01":"CPHLPM01",
+      "name_P06":"UMMC",
+      "fractional_part": 4 
+   },
+   "TUR4":{
+      "name_IOC":"TURBIDITY",
+      "units_IOC":"N.T.U Nephelo Turb. Unit",
+      "name_P01":"TURBXXXX",
+      "name_P06":"USTU",
+      "fractional_part": 2
+   },
+   "LGHT":{
+      "name_IOC":"LIGHT IRRADIANCE IMMERGED PAR",
+      "units_IOC":"micromole photon/(m2.second)",
+      "name_P01":"PARERXUD",
+      "name_P06":"UMES",
+      "fractional_part": 3
+   }   
+}

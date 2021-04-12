@@ -1,0 +1,142 @@
+{
+   "pr":{
+      "full_name":"Pressure [db]",
+      "name_P09":"PRES"
+   },
+   "prM":{
+      "full_name":"Pressure [db]",
+      "name_P09":"PRES"
+   },
+   "prDM":{
+      "full_name":"Pressure, Digiquartz [db]",
+      "name_P09":"PRES"
+   },
+   "prdM":{
+      "full_name":"Pressure, Digiquartz [db]",
+      "name_P09":"PRES"
+   },
+   "prSM":{
+      "full_name":"Pressure, Strain Gauge [db]",
+      "name_P09":"PRES"
+   },
+   "pr50M":{
+      "full_name":"Pressure, SBE 50 [db]",
+      "name_P09":"PRES"
+   },
+   "pr50M1":{
+      "full_name":"Pressure, SBE 50, 2 [db]",
+      "name_P09":"PRES"
+   },
+   "t068C":{
+      "full_name":"Temperature [IPTS-68, deg C]",
+      "name_P09":"TEMP"
+   },
+   "t4968C":{
+      "full_name":"Temperature [IPTS-68, deg C]",
+      "name_P09":"TEMP"
+   },
+   "tnc68C":{
+      "full_name":"Temperature [IPTS-68, deg C]",
+      "name_P09":"TEMP"
+   },
+   "tv268C":{
+      "full_name":"Temperature [IPTS-68, deg C]",
+      "name_P09":"TEMP"
+   },
+   "t090C":{
+      "full_name":"Temperature [IPTS-90, deg C]",
+      "name_P09":"TEMP"
+   },
+   "T090C":{
+      "full_name":"Temperature [IPTS-90, deg C]",
+      "name_P09":"TEMP"
+   },
+   "t4990C":{
+      "full_name":"Temperature [IPTS-90, deg C]",
+      "name_P09":"TEMP"
+   },
+   "tnc90C":{
+      "full_name":"Temperature [IPTS-90, deg C]",
+      "name_P09":"TEMP"
+   },
+   "tv290C":{
+      "full_name":"Temperature [IPTS-90, deg C]",
+      "name_P09":"TEMP"
+   },
+   "t168C":{
+      "full_name":"Temperature, 2 [ITS-68, deg C]",
+      "name_P09":"TE02"
+   },
+   "tnc268C":{
+      "full_name":"Temperature, 2 [ITS-68, deg C]",
+      "name_P09":"TE02"
+   },
+   "t190C":{
+      "full_name":"Temperature, 2 [ITS-90, deg C]",
+      "name_P09":"TE02"
+   },
+   "tnc290C":{
+      "full_name":"Temperature, 2 [ITS-90, deg C]",
+      "name_P09":"TE02"
+   },
+   "sal00":{
+      "full_name":"Salinity, Practical [PSU]",
+      "name_P09":"PSAL"
+   },
+   "sal11":{
+      "full_name":"Salinity, Practical, 2 [PSU]",
+      "name_P09":"PSAL"
+   },
+   "c0S/m":{
+      "full_name":"Conductivity [S/m]",
+      "name_P09":"CNDC"
+   },
+   "c_S/m":{
+      "full_name":"Conductivity [S/m]",
+      "name_P09":"CNDC"
+   },
+   "cond0S/m":{
+      "full_name":"Conductivity [S/m]",
+      "name_P09":"CNDC"
+   },
+   "c1S/m":{
+      "full_name":"Conductivity, 2 [S/m]",
+      "name_P09":"CNDC"
+   },
+   "svCM":{
+      "name":"Sound Velocity [Chen-Millero, m/s]",
+      "name_P09":"SVEL"
+   },
+   "svDM":{
+      "name":"Sound Velocity [Delgrosso, m/s]",
+      "name_P09":"SVEL"
+   },
+   "svWM":{
+      "name":"Sound Velocity [Wilson, m/s]",
+      "name_P09":"SVEL"
+   },
+   "sbeox0ML/L":{
+      "full_name":"Oxygen, SBE 43 [ml/l]",
+      "name_P09":"DOX1"
+   },
+   "sbeox0PS":{
+      "full_name":"Oxygen, SBE 43 [% saturation]",
+      "name_P09":"OSAT"
+   },
+   "sbeox0Mm/Kg":{
+      "full_name":"Oxygen, SBE 43 [umol/kg]",
+      "name_P09":"DOX2"
+   },
+   "flECO-AFL":{
+      "full_name":"Fluorescence, WET Labs ECO-AFL/FL[mg/m^3]",
+      "name_P09":"FLU2"
+   },
+   "turbWETntu0":{
+      "full_name":"Turbidity, WET Labs ECO [NTU]",
+      "name_P09":"TUR4"
+   },
+   "par":{
+      "full_name":"PAR/Irradiance, Biospherical/Licor",
+      "name_P09":"LGHT"
+   }
+}
