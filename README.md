@@ -17,16 +17,41 @@
 <p id="bkmrk-all-these-tasks-are-">All these tasks are time consuming and require human interaction that can lead to errors or lack of uniformity in data. Taking into account that CTD data usually follows the same format and involves similar processing, a software has been developed to perform all these tasks straightforward. Technically, the software is written in Python and there is also a Flask version to serve the application through web. To learn about the deployment of this application in a web server, please, <a title="Deploying Python Flask: the example of IEO CTD Checker" href="http://www.wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/deploying-python-flask-the-example-of-ieo-ctd-checker">read this page</a>.</p>
 <p id="bkmrk-%C2%A0"> </p>
 
+## Run the code locally
 
-## How to use the application?
-<p id="bkmrk-1%29-navigate-in-your-">1) Open the file ctd_check.py and provide the route of your xml file and your cnv files. No other kind of files can coexist in this foilder. In this case, the xml is the Cruise Summary Report (CSR) file. This is a XML file containing information of your research campaign (metadata). Usually, this file is created with <a href="https://www.seadatanet.org/Software/MIKADO">MIKADO</a> software at the end of the campaign and submitted to the corresponding National Oceanographic Data Center (NODC). After, the NODC checks and populates this file to the SeaDataNet infrastructure. If you don't have this file, try a search in the <a href="http://seadata.bsh.de/Cgi-csr/retrieve_sdn2/start_sdn2.pl">SeaDataNet database</a> and download the file as XML V2.
-<p id="bkmrk-2%29-provide-a-cruise-">2) Run the code and you'll obtain an output folder in the same directory with data in MedAtlas formar, CDI (xml) files for each CTD profile and some figures. Here you can find and example of a figure:
-  
-  http://www.wiki.ieo.es/uploads/images/gallery/2020-03-Mar/scaled-840-0/image-1583136050784.png
-  
- Salinity and temperature profiles are drawn for each profile. Shaded areas behind profiles indicate climatologic values (mean +/- standard deviation). An orange circle over the profile indicates that a test failed. 
+### As a Python Flask application
+You need download and install all components in a virtual environment. Once the environment is active, run in your console:
+```sh
+python app.py
+```
+open your browser and verify that the application is up and running on  port 5000
+```sh
+127.0.0.1:5000
+```
 
-Most of the tests done by the application simply reproduce the procedure recommended by GTSPP. Its real time quality control manual lays out in detail the automatic tests to be carried out on temperature and salinity data (se also SeaDataNet Data Quality Control Procedures manual). In order not to reinvent the wheel, the CoTeDe Python package created by Guilherme P. Castelao has been adapted.
+### As a classical Python application
+Download and install all components in a virtual environment. The main file is `checking.py`. You need to make some changes before execute it:
+1) Turn flash_messages variable to False in checking.py, read.py and extras.py.
+2) Set your path with your files (line after import statements). This is the route of your xml file and your cnv files. No other kind of files can coexist in this folder. In this case, the xml is the Cruise Summary Report (CSR) file. 
+3) Uncomment the last block of lines at the end of this file.
 
-To learn more: http://www.wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker
 
+## Installation
+
+For production environments have a look at the [deployment] documentation.
+
+
+## About this software
+
+Most of the tests done by the application simply reproduce the procedure recommended by GTSPP. Its real time quality control manual lays out in detail the automatic tests to be carried out on temperature and salinity data (se also SeaDataNet Data Quality Control Procedures manual). 
+
+## Acknowledgements
+
+In order not to reinvent the wheel, some parts of the CoTeDe Python package created by Guilherme P. Castelao and the [python-ctd] library have been adapted.
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+[here]: <http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker>
+[deployment]: <http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/deploying-python-flask-the-example-of-ieo-ctd-checker>
+[python-ctd]: <https://github.com/pyoceans/python-ctd>
