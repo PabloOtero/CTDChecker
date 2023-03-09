@@ -14,7 +14,12 @@ To run locally, you have to modify some parts:
     1) Turn flash_messages variable to False in checking.py, read.py and extras.py
     2) Set your path with your files (line after import statements)
     3) Uncomment the last block of lines at the end of this file
-         
+    
+    
+WARNING Oct 2021 Fails with some updates in libraries
+ lxml==4.6.1
+ pandas==1.1.4    
+         e.g. pip install lxml==4.6.1
 """
 
 import os
@@ -38,7 +43,8 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 warnings.simplefilter(action="ignore", category=FutureWarning)
 warnings.simplefilter(action="ignore", category=DeprecationWarning)
 
-#path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/test/')
+#path=('D:/Pablo/CentroDatos/Datos/PENDIENTES/JUREVA0416_fail/')
+#path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/test_elena/')
 #path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/CAREVA0316/')
 #path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/DEMERSALES2020/')
 
@@ -141,7 +147,7 @@ def check_casts(tmpdir, csr = None):
             print('WARNING: No data in file ' + filename.name)
             if flash_messages:
                 flash('<code>File ' + filename.name + '</code>' + ' No data in file. This file will be skipped', "danger")
-            filenames = filenames.pop(idx)
+            filenames.pop(idx)
             continue
         else:
             casts.append(cast)
@@ -185,8 +191,9 @@ def check_casts(tmpdir, csr = None):
         
         # Select downcast whenever possibe
         # If there are only upcast data, it still appears one row of data in downcast
-        # In that case, select upcast
-        if (len(down) <= 1) and (len(up)>1):
+        # In the upcast is at least the double size than downcast, select it
+        #if (len(down) <= 1) and (len(up)>1):
+        if (len(up)>(len(down)*2)):
             df=up
             print('Upcast instead downcast selected in station ', metadata[idx]['name'])
             if flash_messages:
@@ -246,12 +253,19 @@ def check_casts(tmpdir, csr = None):
                         pass
                 if 'binavg_in' not in metadata[idx]['config']:
                     print('Bin average the index to an interval of 1')
-                    df = df.bindata(delta=1, method='interpolate')                    
+                    df = df.bindata(delta=1, method='interpolate')  
+                                                           
             except:
                 if flash_messages:
                     flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' Preprocessing required and I could not do it for you', "danger")
                 raise('Preprocessing required and I could not do it for you')
 
+        # After preprocessing, the length of data could be not enough. 
+        if len(df) < 2:
+            print('WARNING: After preprocessing, not enough data to continue with file ' + metadata[idx]['name'])
+            if flash_messages:
+                flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' After some preprocessing, not enough bin-averaged depths to continue. Drop this file and start again.', "danger")
+            return
 
         # Pressure is stored as index. Rename, move to column and change to integer
         df.index.names = ['PRES']
@@ -392,7 +406,13 @@ def check_casts(tmpdir, csr = None):
             
             
             if ('TEMP' or 'TE01') and 'PSAL' in df.columns:
-                plot_cast_panel(df, metadata, idx, fname)
+                try:
+                    plot_cast_panel(df, metadata, idx, fname)
+                except:
+                    if flash_messages:
+                        flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' Failed to plot.', "warning")
+                    print('Failed to plot. Maybe there is a problem with dimensions.')
+                    continue
                         
             if idx == len(casts) - 1:
                 fig, ax = plt.subplots()
@@ -486,7 +506,7 @@ def check_casts(tmpdir, csr = None):
     return metadata
 
 
-# ## Load CSR file and check CTDs (Uncomment if run locally)
+## Load CSR file and check CTDs (Uncomment if run locally)
 # csr = load_csr(path)
 # metadata = check_casts(path, csr)
 

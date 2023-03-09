@@ -995,7 +995,7 @@ def parse_csr(fname):
     try:
         full_path = "{http://www.isotc211.org/2005/gmd}contact/{http://www.isotc211.org/2005/gmd}CI_ResponsibleParty/{http://www.isotc211.org/2005/gmd}contactInfo/"        
         node = root.find(full_path)
-        custodian_contact =  ET.tostring(node, encoding="unicode", method="xml")
+        custodian_contact =  ET.tostring(node, encoding="unicode", method="xml")    
         idx_start = custodian_contact.find(' ')
         idx_end = custodian_contact.find('>')
         custodian_contact = custodian_contact.replace(custodian_contact[idx_start:idx_end],'').rstrip("\n").rstrip()

@@ -475,7 +475,9 @@ def digit_roll_over(df, var, cfg):
     y[1:] = ma.diff(x)
 
     flag = np.zeros(y.shape, dtype="i1")   
-    flag[y > threshold] = FLAG_BAD
+    flag[(ma.getmaskarray(y) == False) & (abs(y) > threshold)] = FLAG_BAD
+    #flag[y > threshold] = FLAG_BAD
+    #flag[abs(y) > threshold] = FLAG_BAD
     #flag[ma.absolute(y) <= threshold] = FLAG_GOOD
 
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
