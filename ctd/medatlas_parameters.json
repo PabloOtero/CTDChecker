@@ -1,0 +1,2859 @@
+{
+    "main": [
+        {
+            "CODE_PARAMETRE": "ABB1",
+            "NOM_PARAMETRE": "ABUNDANCE OF BIO PER VOLUME",
+            "UNITE_PARAMETRE": "number/ml"
+        },
+        {
+            "CODE_PARAMETRE": "ABB2",
+            "NOM_PARAMETRE": "ABUNDANCE OF BIO PER AREA",
+            "UNITE_PARAMETRE": "number/m2"
+        },
+        {
+            "CODE_PARAMETRE": "ABB3",
+            "NOM_PARAMETRE": "ABUNDANCE BIO PER VOL IN SED",
+            "UNITE_PARAMETRE": "number/ml"
+        },
+        {
+            "CODE_PARAMETRE": "ABCP",
+            "NOM_PARAMETRE": "ALPHA BETA CAROTENES",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ABED",
+            "NOM_PARAMETRE": "SURFACE SAMPLED OR OBSERVED",
+            "UNITE_PARAMETRE": "m2"
+        },
+        {
+            "CODE_PARAMETRE": "ACES",
+            "NOM_PARAMETRE": "ACENAPHTHYLENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ACEW",
+            "NOM_PARAMETRE": "ACENAPHTHYLENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "AGSX",
+            "NOM_PARAMETRE": "Ag IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "AG63",
+            "NOM_PARAMETRE": "Ag<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ALKW",
+            "NOM_PARAMETRE": "ALKALINITY",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ALKY",
+            "NOM_PARAMETRE": "ALKALINITY",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ALTS",
+            "NOM_PARAMETRE": "HEIGHT ABOVE MEAN SEA LEVEL",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "ALUW",
+            "NOM_PARAMETRE": "ALUMINIUM IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "AL63",
+            "NOM_PARAMETRE": "Al<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "AMIS",
+            "NOM_PARAMETRE": "SEDIMENT AMINO-ACIDS",
+            "UNITE_PARAMETRE": "microgram/g"
+        },
+        {
+            "CODE_PARAMETRE": "AMON",
+            "NOM_PARAMETRE": "AMMONIUM (NH4-N) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "AMOP",
+            "NOM_PARAMETRE": "AMONIUM IN SEDIMENT PORE WATER",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "AMOW",
+            "NOM_PARAMETRE": "AMMONIUM (NH4-N) CONTENT",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "AMSE",
+            "NOM_PARAMETRE": "AMMONIUM IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ANTB",
+            "NOM_PARAMETRE": "ANTHRACENE IN BIOTA",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ANTS",
+            "NOM_PARAMETRE": "ANTHRACENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ANTW",
+            "NOM_PARAMETRE": "ANTHRACENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ANXW",
+            "NOM_PARAMETRE": "ANTHERAXANTHIN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ARSW",
+            "NOM_PARAMETRE": "ARSENIC IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ASDW",
+            "NOM_PARAMETRE": "ABSORPTION STANDARD DEVIATION",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ASSX",
+            "NOM_PARAMETRE": "As IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ATMP",
+            "NOM_PARAMETRE": "ATMOSPHERIC PRESSURE",
+            "UNITE_PARAMETRE": "hectopascal"
+        },
+        {
+            "CODE_PARAMETRE": "ATMS",
+            "NOM_PARAMETRE": "ATMOSPHERIC PRESSURE - SEA LEV",
+            "UNITE_PARAMETRE": "hectopascal"
+        },
+        {
+            "CODE_PARAMETRE": "ATPT",
+            "NOM_PARAMETRE": "ATMOSPHERIC PRESSURE TENDENCY",
+            "UNITE_PARAMETRE": "hectopascal/hour"
+        },
+        {
+            "CODE_PARAMETRE": "AXAP",
+            "NOM_PARAMETRE": "ALLOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BAAS",
+            "NOM_PARAMETRE": "BENZ(A)ANTHRACENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BAAW",
+            "NOM_PARAMETRE": "BENZ(A)ANTHRACENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BAPS",
+            "NOM_PARAMETRE": "BENZO(A)PYRENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BAPW",
+            "NOM_PARAMETRE": "BENZO(A)PYRENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BATH",
+            "NOM_PARAMETRE": "BATHYMETRIC DEPTH",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "BBFS",
+            "NOM_PARAMETRE": "BENZO(B)FLUORANTHENE SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BBFW",
+            "NOM_PARAMETRE": "BENZO(B)FLUORANTHENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BCCS",
+            "NOM_PARAMETRE": "NUMBER OF BACTERIA IN SEDIMENT",
+            "UNITE_PARAMETRE": "10+9 cell/dm3"
+        },
+        {
+            "CODE_PARAMETRE": "BCCW",
+            "NOM_PARAMETRE": "NUMBER OF SW BACTERIA",
+            "UNITE_PARAMETRE": "10+9 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BCMW",
+            "NOM_PARAMETRE": "BACTERIAL BIOMASS IN SEA WATER",
+            "UNITE_PARAMETRE": "milligram carbon/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BENW",
+            "NOM_PARAMETRE": "BENZENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BFUP",
+            "NOM_PARAMETRE": "19'BUTANOYLOXYFUCOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BGHS",
+            "NOM_PARAMETRE": "BENZO(G,H,I)PERYLENE SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BGHW",
+            "NOM_PARAMETRE": "BENZO(G,H,I)PERYLENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "BISX",
+            "NOM_PARAMETRE": "Bi IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BI63",
+            "NOM_PARAMETRE": "Bi<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BKFS",
+            "NOM_PARAMETRE": "BENZO(K)FLUORANTHENE SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "BKFW",
+            "NOM_PARAMETRE": "BENZO(K)FLUORANTHENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CADB",
+            "NOM_PARAMETRE": "CADMIUM IN BIOTA ",
+            "UNITE_PARAMETRE": "microgram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CADS",
+            "NOM_PARAMETRE": "CADMIUM IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CADW",
+            "NOM_PARAMETRE": "CADMIUM IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CA63",
+            "NOM_PARAMETRE": "Ca<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CBIO",
+            "NOM_PARAMETRE": "CARBON BIOMASS OF BIO ENTITY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CDFW",
+            "NOM_PARAMETRE": "DARK FIXATION",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "CDOM",
+            "NOM_PARAMETRE": "COLORED DISS. ORGANIC MATTER",
+            "UNITE_PARAMETRE": "ppb"
+        },
+        {
+            "CODE_PARAMETRE": "CDSX",
+            "NOM_PARAMETRE": "Cd IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CD40",
+            "NOM_PARAMETRE": "Cd>0.4/0.45um IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CD45",
+            "NOM_PARAMETRE": "Cd<0.4/0.45um IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CD63",
+            "NOM_PARAMETRE": "Cd<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CE1W",
+            "NOM_PARAMETRE": "DISSOLVED CFC11 ERROR",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CE2W",
+            "NOM_PARAMETRE": "DISSOLVED CFC12 ERROR",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CE3W",
+            "NOM_PARAMETRE": "DISSOLVED CFC113 ERROR",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CE63",
+            "NOM_PARAMETRE": "Ce<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CF1W",
+            "NOM_PARAMETRE": "DISSOLVED CFC11",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CF2W",
+            "NOM_PARAMETRE": "DISSOLVED CFC12",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CF3W",
+            "NOM_PARAMETRE": "DISSOLVED CFC113",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CHAD",
+            "NOM_PARAMETRE": "DIVINYL CHLOROPHYLL-A",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHAE",
+            "NOM_PARAMETRE": "EPIMERE CHLOROPHYLL-A",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHAF",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A VERTICAL FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "CHAS",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CHBD",
+            "NOM_PARAMETRE": "DIVINYL-CHLOROPHYLL-B",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHCZ",
+            "NOM_PARAMETRE": "CHLOROPHYLL-C1+C2",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHC3",
+            "NOM_PARAMETRE": "CHLOROPHYLL-C3",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHLB",
+            "NOM_PARAMETRE": "CHLOROPHYLL-B TOTAL",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHLC",
+            "NOM_PARAMETRE": "CHLOROPHYLL-C TOTAL",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHLS",
+            "NOM_PARAMETRE": "Chlorine IN DRY WGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CHLT",
+            "NOM_PARAMETRE": "CHLOROPHYLL-TOTAL",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CHRS",
+            "NOM_PARAMETRE": "CHRYSENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CHSD",
+            "NOM_PARAMETRE": "STD DEVIATION CHLOROPHYLL-A",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CHTF",
+            "NOM_PARAMETRE": "PART. TOTAL CARBOHYDRATES FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "CHTS",
+            "NOM_PARAMETRE": "SEDIMENT CARBOHYDRATES",
+            "UNITE_PARAMETRE": "microgram/g"
+        },
+        {
+            "CODE_PARAMETRE": "CH1P",
+            "NOM_PARAMETRE": "CHL-A(LESS DIVINYLCHL-A)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CH1T",
+            "NOM_PARAMETRE": "CHLOROPHYLL TOTAL",
+            "UNITE_PARAMETRE": "microgram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CH2P",
+            "NOM_PARAMETRE": "CHL-B(LESS DIVINYLCHL-B)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CICW",
+            "NOM_PARAMETRE": "NUMBER OF SW CILIATES",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CJDY",
+            "NOM_PARAMETRE": "JULIAN DATE (CHRONOLOGICAL)",
+            "UNITE_PARAMETRE": "day"
+        },
+        {
+            "CODE_PARAMETRE": "CLAY",
+            "NOM_PARAMETRE": "CLAY IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "CL4W",
+            "NOM_PARAMETRE": "DISSOLVED C-TETRACHLORIDE",
+            "UNITE_PARAMETRE": "picomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CNDC",
+            "NOM_PARAMETRE": "ELECTRICAL CONDUCTIVITY",
+            "UNITE_PARAMETRE": "mho/meter"
+        },
+        {
+            "CODE_PARAMETRE": "COCW",
+            "NOM_PARAMETRE": "NUMBER OF SW COCCOLITHOPHORIDS",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CODW",
+            "NOM_PARAMETRE": "CHEMICAL OXYGEN DEMAND",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "COPF",
+            "NOM_PARAMETRE": "COCCOLITHOPHORIDAE PPC FLUX",
+            "UNITE_PARAMETRE": "milligram carbon/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "COPP",
+            "NOM_PARAMETRE": "NUMBER OF COPEPODS",
+            "UNITE_PARAMETRE": "number/m3"
+        },
+        {
+            "CODE_PARAMETRE": "COPS",
+            "NOM_PARAMETRE": "COPPER IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CORG",
+            "NOM_PARAMETRE": "DISSOLVED ORGANIC CARBON",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "COSX",
+            "NOM_PARAMETRE": "Co IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CO2W",
+            "NOM_PARAMETRE": "DISSOLVED CARBON DIOXYD (CO2)",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CO3F",
+            "NOM_PARAMETRE": "PART. CaCO3 FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "CO3P",
+            "NOM_PARAMETRE": "CARBONATES CONTENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "CO3S",
+            "NOM_PARAMETRE": "SEDIMENT CARBONATES",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "CO63",
+            "NOM_PARAMETRE": "Co<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CPHL",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A TOTAL",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH1",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A TOTAL",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH2",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A >2 MICRON ",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH3",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A >20 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH4",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A >10 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH5",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A >3 <20 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH6",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A <3 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CPH7",
+            "NOM_PARAMETRE": "CHLOROPHYLL-A >3 <10 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CROW",
+            "NOM_PARAMETRE": "CHROMIUM IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CRYW",
+            "NOM_PARAMETRE": "CHRYSENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "CR63",
+            "NOM_PARAMETRE": "Cr<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CSSX",
+            "NOM_PARAMETRE": "Cs  IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CS63",
+            "NOM_PARAMETRE": "Cs<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CUPH",
+            "NOM_PARAMETRE": "14C PRODUCTION FILTER UNSPECIF",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.hour)"
+        },
+        {
+            "CODE_PARAMETRE": "CUPW",
+            "NOM_PARAMETRE": "14C PRODUCTION FILTER UNSPECIF",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "CU63",
+            "NOM_PARAMETRE": "Cu<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "CYAF",
+            "NOM_PARAMETRE": "NUMBER OF CYANOBACTERIA",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "C1UW",
+            "NOM_PARAMETRE": "14C UPTAKE 0.2-1 MICRON",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "C13D",
+            "NOM_PARAMETRE": "DELTA 13C (13C/12C)",
+            "UNITE_PARAMETRE": "per thousand"
+        },
+        {
+            "CODE_PARAMETRE": "C2UW",
+            "NOM_PARAMETRE": "14C PRODUCTION >2 MICRON",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "C363",
+            "NOM_PARAMETRE": "CO3<63um IN DRY WGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "C4UW",
+            "NOM_PARAMETRE": "14C PRODUCTION >10 MICRON",
+            "UNITE_PARAMETRE": "milligram carbon/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "DAYX",
+            "NOM_PARAMETRE": "DAY WITHIN MONTH",
+            "UNITE_PARAMETRE": "dd"
+        },
+        {
+            "CODE_PARAMETRE": "DBAS",
+            "NOM_PARAMETRE": "DIBENZO(AH)ANTHRACENE SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "DBAW",
+            "NOM_PARAMETRE": "DIBENZO(AH)ANTHRACENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DBIO",
+            "NOM_PARAMETRE": "DRY WEIGHT BIOMASS OF ENTITY",
+            "UNITE_PARAMETRE": "gram/m2"
+        },
+        {
+            "CODE_PARAMETRE": "DCAW",
+            "NOM_PARAMETRE": "DARK CARBON ABSORPTION",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DENS",
+            "NOM_PARAMETRE": "DENSITY (Sigma-theta)",
+            "UNITE_PARAMETRE": "kg/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DEPH",
+            "NOM_PARAMETRE": "DEPTH BELOW SEA SURFACE",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "DEWT",
+            "NOM_PARAMETRE": "DEW POINT TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "DFCW",
+            "NOM_PARAMETRE": "NUMBER OF SW DINOFLAGELLATES",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DFPF",
+            "NOM_PARAMETRE": "DINOFLAGELLATES PPC FLUX",
+            "UNITE_PARAMETRE": "milligram carbon/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "DICP",
+            "NOM_PARAMETRE": "DIC IN SEDIMENT PORE WATER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DINW",
+            "NOM_PARAMETRE": "NUMBER OF SW DYNOPHYSIS",
+            "UNITE_PARAMETRE": "10+3 specimen/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DIPF",
+            "NOM_PARAMETRE": "DIATOMS PPC FLUX",
+            "UNITE_PARAMETRE": "milligram carbon/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "DMTW",
+            "NOM_PARAMETRE": "1,3-1,4DIMETHYLBENZENE WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DOCP",
+            "NOM_PARAMETRE": "DOC IN SEDIMENT PORE WATER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DOCS",
+            "NOM_PARAMETRE": "ORGANIC CARBON DOC IN SEDIMENT",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DOPW",
+            "NOM_PARAMETRE": "DISSOLVED ORGANIC PHOSPHORUS",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DOXY",
+            "NOM_PARAMETRE": "DISSOLVED OXYGEN",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DOX1",
+            "NOM_PARAMETRE": "DISSOLVED OXYGEN",
+            "UNITE_PARAMETRE": "ml/l"
+        },
+        {
+            "CODE_PARAMETRE": "DOX2",
+            "NOM_PARAMETRE": "DISSOLVED OXYGEN",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "DPSF",
+            "NOM_PARAMETRE": "DEPTH BELOW SEA FLOOR",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "DPS1",
+            "NOM_PARAMETRE": "DEPTH BELOW BOTTOM-LOWER LIMIT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "DRDD",
+            "NOM_PARAMETRE": "DURATION (DAYS)",
+            "UNITE_PARAMETRE": "ddd"
+        },
+        {
+            "CODE_PARAMETRE": "DRYT",
+            "NOM_PARAMETRE": "DRY BULB TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "DTCW",
+            "NOM_PARAMETRE": "NUMBER OF SW DIATOMS",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DXAP",
+            "NOM_PARAMETRE": "DIADINOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "DYSX",
+            "NOM_PARAMETRE": "Dy IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "DY63",
+            "NOM_PARAMETRE": "Dy<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "EPMP",
+            "NOM_PARAMETRE": "TOTAL SUSP. PART. MATTER/ESTER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ERSX",
+            "NOM_PARAMETRE": "Er IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ER63",
+            "NOM_PARAMETRE": "Er<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ETBW",
+            "NOM_PARAMETRE": "ETHYLBENZENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ETDD",
+            "NOM_PARAMETRE": "ELLAPSED TIME",
+            "UNITE_PARAMETRE": "decimal day"
+        },
+        {
+            "CODE_PARAMETRE": "ETHP",
+            "NOM_PARAMETRE": "PARTICULATE 234 TH ACT. ERROR",
+            "UNITE_PARAMETRE": "Bequerel/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ETHW",
+            "NOM_PARAMETRE": "DISSOLVED 234 TH ACT. ERROR",
+            "UNITE_PARAMETRE": "Bq/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ETYW",
+            "NOM_PARAMETRE": "BIS(ETHYLHEXYL)PHTHALATE WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "EUSX",
+            "NOM_PARAMETRE": "Eu IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "EU63",
+            "NOM_PARAMETRE": "Eu<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "EWCS",
+            "NOM_PARAMETRE": "CURRENT EAST  STD. DEVIATION",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "EWCT",
+            "NOM_PARAMETRE": "CURRENT EAST COMPONENT",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "FCO2",
+            "NOM_PARAMETRE": "CO2 FUGACITY",
+            "UNITE_PARAMETRE": "microatmosphere"
+        },
+        {
+            "CODE_PARAMETRE": "FESP",
+            "NOM_PARAMETRE": "Fe IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "millimole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "FE63",
+            "NOM_PARAMETRE": "Fe<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "FLPF",
+            "NOM_PARAMETRE": "FLAGELLATES PPC FLUX",
+            "UNITE_PARAMETRE": "milligram carbon/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "FLRS",
+            "NOM_PARAMETRE": "FLUORANTHENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "FLRW",
+            "NOM_PARAMETRE": "FLUORANTHENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "FLUO",
+            "NOM_PARAMETRE": "FLUORESCENCE",
+            "UNITE_PARAMETRE": "relative unit"
+        },
+        {
+            "CODE_PARAMETRE": "FLUS",
+            "NOM_PARAMETRE": "FLUORENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "FLUW",
+            "NOM_PARAMETRE": "FLUORENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "FLU1",
+            "NOM_PARAMETRE": "FLUORESCENCE",
+            "UNITE_PARAMETRE": "volt"
+        },
+        {
+            "CODE_PARAMETRE": "FLU2",
+            "NOM_PARAMETRE": "FLUORESCENCE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "FLU3",
+            "NOM_PARAMETRE": "FLUORESCENCE",
+            "UNITE_PARAMETRE": "FFU Fluoresceine Fluores. Unit"
+        },
+        {
+            "CODE_PARAMETRE": "FUCP",
+            "NOM_PARAMETRE": "FUCOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "GASX",
+            "NOM_PARAMETRE": "Ga IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "GA63",
+            "NOM_PARAMETRE": "Ga<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "GDIR",
+            "NOM_PARAMETRE": "GUST WIND DIRECTION",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "GDSX",
+            "NOM_PARAMETRE": "Gd IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "GD63",
+            "NOM_PARAMETRE": "Gd<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "GLUC",
+            "NOM_PARAMETRE": "CARBOHYDRATE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "GPMP",
+            "NOM_PARAMETRE": "TOTAL SUSP. PART. MATTER/GLASS",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "GSPD",
+            "NOM_PARAMETRE": "GUST WIND SPEED",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "GYRW",
+            "NOM_PARAMETRE": "NUMBER OF SW GYRODINIUM",
+            "UNITE_PARAMETRE": "10+3 specimen/m3"
+        },
+        {
+            "CODE_PARAMETRE": "HBAW",
+            "NOM_PARAMETRE": "NB OF HETEROTROPHIC BACTERIA",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "HCDT",
+            "NOM_PARAMETRE": "DIRECTION REL. TRUE NORTH",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "HCSP",
+            "NOM_PARAMETRE": "HORIZONTAL CURRENT SPEED",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "HCSS",
+            "NOM_PARAMETRE": "HORIZ. CURRENT SPEED STD DEV",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "HEAD",
+            "NOM_PARAMETRE": "PLAT. HEADING REL. TRUE NORTH",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "HEDE",
+            "NOM_PARAMETRE": "HELIUM ISOTOPIC RATIO ERROR",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "HEDW",
+            "NOM_PARAMETRE": "HELIUM DEV. OF ISOTOPIC RATIO",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "HEEW",
+            "NOM_PARAMETRE": "DISSOLVED HELIUM ERROR",
+            "UNITE_PARAMETRE": "nanomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HELD",
+            "NOM_PARAMETRE": "DELTA HELIUM 3",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "HELW",
+            "NOM_PARAMETRE": "DISSOLVED HELIUM",
+            "UNITE_PARAMETRE": "nanomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HFSX",
+            "NOM_PARAMETRE": "Hf IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HFUP",
+            "NOM_PARAMETRE": "19'HEXANOYLOXYFUCOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "HF63",
+            "NOM_PARAMETRE": "Hf<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HGSX",
+            "NOM_PARAMETRE": "Hg IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HOSX",
+            "NOM_PARAMETRE": "Ho IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HO63",
+            "NOM_PARAMETRE": "Ho<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HSUL",
+            "NOM_PARAMETRE": "HYDROGEN SULPHIDE (H2S)",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "HXC1",
+            "NOM_PARAMETRE": "HEXACHLOROBIPHENYL128 SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HXC2",
+            "NOM_PARAMETRE": "HEXACHLOROBIPHENYL138 SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HXC3",
+            "NOM_PARAMETRE": "HEXACHLOROBIPHENYL153 SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "HXC4",
+            "NOM_PARAMETRE": "HEXACHLOROBIPHENYL156 SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "H2OS",
+            "NOM_PARAMETRE": "WATER CONTENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "IC13",
+            "NOM_PARAMETRE": "DIC DELTA 13C",
+            "UNITE_PARAMETRE": "per thousand"
+        },
+        {
+            "CODE_PARAMETRE": "IDPW",
+            "NOM_PARAMETRE": "INDENO(1,2,3CD)PYRENE IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "INCS",
+            "NOM_PARAMETRE": "INORGANIC CARBON IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "INDE",
+            "NOM_PARAMETRE": "INDENO(1,2,3CD)PYRENE SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "IODI",
+            "NOM_PARAMETRE": "IODINE",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "IROS",
+            "NOM_PARAMETRE": "TOTAL IRON IN SEDIMENT ",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "IROW",
+            "NOM_PARAMETRE": "TOTAL IRON IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ISMP",
+            "NOM_PARAMETRE": "INORGANIC SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "LATX",
+            "NOM_PARAMETRE": "LATITUDE",
+            "UNITE_PARAMETRE": "decimal degree"
+        },
+        {
+            "CODE_PARAMETRE": "LA63",
+            "NOM_PARAMETRE": "La<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LCAW",
+            "NOM_PARAMETRE": "LIGHT CARBON ABSORPTION",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "LEAB",
+            "NOM_PARAMETRE": "LEAD IN BIOTA",
+            "UNITE_PARAMETRE": "microgram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LEAS",
+            "NOM_PARAMETRE": "LEAD IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LEAW",
+            "NOM_PARAMETRE": "LEAD IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "LGHT",
+            "NOM_PARAMETRE": "LIGHT IRRADIANCE IMMERGED PAR",
+            "UNITE_PARAMETRE": "micromole photon/(m2.second)"
+        },
+        {
+            "CODE_PARAMETRE": "LGH2",
+            "NOM_PARAMETRE": "PAR ATTENUATION COEFFICIENT",
+            "UNITE_PARAMETRE": "m-1"
+        },
+        {
+            "CODE_PARAMETRE": "LGH3",
+            "NOM_PARAMETRE": "LIGHT IRRADIANCE CORRECTED PAR",
+            "UNITE_PARAMETRE": "micromole photon/(m2.second)"
+        },
+        {
+            "CODE_PARAMETRE": "LGH4",
+            "NOM_PARAMETRE": "LIGHT IRRADIANCE SURFACE PAR",
+            "UNITE_PARAMETRE": "micromole photon/(m2.second)"
+        },
+        {
+            "CODE_PARAMETRE": "LGH5",
+            "NOM_PARAMETRE": "IMMERGED/SURF IRRADIANCE RATIO",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "LINC",
+            "NOM_PARAMETRE": "LONG-WAVE INCOMING RADIATION",
+            "UNITE_PARAMETRE": "watt/m2"
+        },
+        {
+            "CODE_PARAMETRE": "LIPI",
+            "NOM_PARAMETRE": "LIPIDS IN THE WATER COLUMN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "LIPS",
+            "NOM_PARAMETRE": "SEDIMENT LIPIDS",
+            "UNITE_PARAMETRE": "microgram/g"
+        },
+        {
+            "CODE_PARAMETRE": "LISX",
+            "NOM_PARAMETRE": "Li IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LI63",
+            "NOM_PARAMETRE": "Li<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LONX",
+            "NOM_PARAMETRE": "LONGITUDE",
+            "UNITE_PARAMETRE": "decimal degree"
+        },
+        {
+            "CODE_PARAMETRE": "LSCT",
+            "NOM_PARAMETRE": "LIGHT SCATTERING",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "LSIC",
+            "NOM_PARAMETRE": "LITHOGENIC CONTENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "LTHF",
+            "NOM_PARAMETRE": "LITHOGENIC FRACTION FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "LTUW",
+            "NOM_PARAMETRE": "LEUCINE UPTAKE RATE",
+            "UNITE_PARAMETRE": "microgram carbon/(m3.hour)"
+        },
+        {
+            "CODE_PARAMETRE": "LUSX",
+            "NOM_PARAMETRE": "Lu IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "LUTW",
+            "NOM_PARAMETRE": "LUTEIN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "LU63",
+            "NOM_PARAMETRE": "Lu<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MAGP",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE SILVER",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MAGW",
+            "NOM_PARAMETRE": "DISSOLVED SILVER (Ag)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MALF",
+            "NOM_PARAMETRE": "AL FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MALP",
+            "NOM_PARAMETRE": "Al IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MALS",
+            "NOM_PARAMETRE": "Al IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MANW",
+            "NOM_PARAMETRE": "TOTAL MANGANESE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MAXD",
+            "NOM_PARAMETRE": "MAX. DEPTH BELOW SEA SURFACE",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "MBAP",
+            "NOM_PARAMETRE": "Ba IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MBAS",
+            "NOM_PARAMETRE": "Ba IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MBRS",
+            "NOM_PARAMETRE": "Br IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MCAP",
+            "NOM_PARAMETRE": "Ca IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MCAS",
+            "NOM_PARAMETRE": "Ca IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MCDW",
+            "NOM_PARAMETRE": "DISSOLVED CADMIUM (Cd)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MCES",
+            "NOM_PARAMETRE": "Ce IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MCLP",
+            "NOM_PARAMETRE": "Cl IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MCOW",
+            "NOM_PARAMETRE": "DISSOLVED COBALT (Co)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MCRS",
+            "NOM_PARAMETRE": "Cr IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MCUF",
+            "NOM_PARAMETRE": "CU FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "microgram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MCUS",
+            "NOM_PARAMETRE": "Cu IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MCUW",
+            "NOM_PARAMETRE": "DISSOLVED COPPER (Cu)",
+            "UNITE_PARAMETRE": "micromole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MCU2",
+            "NOM_PARAMETRE": "DISSOLVED COPPER (Cu)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MERB",
+            "NOM_PARAMETRE": "TOTAL MERCURY IN BIOTA",
+            "UNITE_PARAMETRE": "microgram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MERW",
+            "NOM_PARAMETRE": "TOTAL MERCURY IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "METW",
+            "NOM_PARAMETRE": "METHYLBENZENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MFEF",
+            "NOM_PARAMETRE": "FE FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MFEP",
+            "NOM_PARAMETRE": "Fe IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MFES",
+            "NOM_PARAMETRE": "Fe IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MG63",
+            "NOM_PARAMETRE": "Mg<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MIIS",
+            "NOM_PARAMETRE": "I IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MIND",
+            "NOM_PARAMETRE": "MIN. DEPTH BELOW SEA SURFACE",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "MKKP",
+            "NOM_PARAMETRE": "K IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MKKS",
+            "NOM_PARAMETRE": "K IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MLAS",
+            "NOM_PARAMETRE": "La IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MMGP",
+            "NOM_PARAMETRE": "Mg IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MMGS",
+            "NOM_PARAMETRE": "Mg IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MMNF",
+            "NOM_PARAMETRE": "MN FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "microgram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MMNP",
+            "NOM_PARAMETRE": "Mn IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MMNS",
+            "NOM_PARAMETRE": "Mn IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MMOS",
+            "NOM_PARAMETRE": "Mo IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MNAS",
+            "NOM_PARAMETRE": "Na IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MNBS",
+            "NOM_PARAMETRE": "Nb IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MNDS",
+            "NOM_PARAMETRE": "Nd IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MNIS",
+            "NOM_PARAMETRE": "Ni IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MNIW",
+            "NOM_PARAMETRE": "DISSOLVED NICKEL (Ni)",
+            "UNITE_PARAMETRE": "micromole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MNI2",
+            "NOM_PARAMETRE": "DISSOLVED NICKEL (Ni)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MNSP",
+            "NOM_PARAMETRE": "Mn IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "millimole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MNTH",
+            "NOM_PARAMETRE": "MONTH",
+            "UNITE_PARAMETRE": "mm"
+        },
+        {
+            "CODE_PARAMETRE": "MN63",
+            "NOM_PARAMETRE": "Mn<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MO63",
+            "NOM_PARAMETRE": "Mo<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "MPBF",
+            "NOM_PARAMETRE": "PB FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "microgram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MPBS",
+            "NOM_PARAMETRE": "Pb IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MPBW",
+            "NOM_PARAMETRE": "DISSOLVED LEAD (Pb)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MPPP",
+            "NOM_PARAMETRE": "P IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MPPS",
+            "NOM_PARAMETRE": "P IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MRBS",
+            "NOM_PARAMETRE": "Rb IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MSBO",
+            "NOM_PARAMETRE": "MESOZOOPLANKTON ASH-FREE DRY W",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MSCS",
+            "NOM_PARAMETRE": "Sc IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MSDP",
+            "NOM_PARAMETRE": "MEAN SPHERIC DIAM. OF PARTICLE",
+            "UNITE_PARAMETRE": "millimeter"
+        },
+        {
+            "CODE_PARAMETRE": "MSIP",
+            "NOM_PARAMETRE": "Si IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MSIS",
+            "NOM_PARAMETRE": "Si IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MSMP",
+            "NOM_PARAMETRE": "MEAN SPHERIC DIAM. MEDIAN",
+            "UNITE_PARAMETRE": "millimeter"
+        },
+        {
+            "CODE_PARAMETRE": "MSRS",
+            "NOM_PARAMETRE": "Sr IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MSSP",
+            "NOM_PARAMETRE": "S IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MSZW",
+            "NOM_PARAMETRE": "MESOZOOPLANCTON DRY WEIGHT",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MTHS",
+            "NOM_PARAMETRE": "Th IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MTIP",
+            "NOM_PARAMETRE": "Ti IN SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MTIS",
+            "NOM_PARAMETRE": "Ti IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "MUUS",
+            "NOM_PARAMETRE": "U IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MVVS",
+            "NOM_PARAMETRE": "V IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MYYS",
+            "NOM_PARAMETRE": "Y IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MZNF",
+            "NOM_PARAMETRE": "ZN FLUX IN SETTLING PARTICLES",
+            "UNITE_PARAMETRE": "microgram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "MZNS",
+            "NOM_PARAMETRE": "Zn IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "MZNW",
+            "NOM_PARAMETRE": "DISSOLVED ZINC (Zn)",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "MZRS",
+            "NOM_PARAMETRE": "Zr IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "NAPS",
+            "NOM_PARAMETRE": "NAPHTHALENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NAPW",
+            "NOM_PARAMETRE": "NAPHTHALENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NAVG",
+            "NOM_PARAMETRE": "AVERAGED DATA CYCLE NUMBER",
+            "UNITE_PARAMETRE": "number"
+        },
+        {
+            "CODE_PARAMETRE": "ND63",
+            "NOM_PARAMETRE": "Nd<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NEEW",
+            "NOM_PARAMETRE": "DISSOLVED NEON ERROR",
+            "UNITE_PARAMETRE": "nanomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NEOW",
+            "NOM_PARAMETRE": "DISSOLVED NEON",
+            "UNITE_PARAMETRE": "nanomole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NEXW",
+            "NOM_PARAMETRE": "NEOXANTHIN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NFAW",
+            "NOM_PARAMETRE": "AUTOTROPHIC NANOFLAGELLATES",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NFCW",
+            "NOM_PARAMETRE": "NUMBER OF SW NANOFLAGELLATES",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NFHW",
+            "NOM_PARAMETRE": "HETEROTROPHIC NANOFLAGELLATES",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NHRW",
+            "NOM_PARAMETRE": "AMMONIUM REGENERATION",
+            "UNITE_PARAMETRE": "micromole nitrogen/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "NHUW",
+            "NOM_PARAMETRE": "AMMONIUM UPTAKE",
+            "UNITE_PARAMETRE": "micromole nitrogen/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "NIKS",
+            "NOM_PARAMETRE": "NICKEL IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NIKW",
+            "NOM_PARAMETRE": "NICKEL IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NISX",
+            "NOM_PARAMETRE": "Ni IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NITS",
+            "NOM_PARAMETRE": "NITROGEN IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "NIUW",
+            "NOM_PARAMETRE": "NITROGEN UPTAKE (FIXATION)",
+            "UNITE_PARAMETRE": "micromole nitrogen/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "NNEF",
+            "NOM_PARAMETRE": "NUMBER OF NANOEUKARYOTES",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NODW",
+            "NOM_PARAMETRE": "DISSOLVED ORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NOPW",
+            "NOM_PARAMETRE": "4-NONYLPHENOL IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NORG",
+            "NOM_PARAMETRE": "DISSOLVED ORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NORW",
+            "NOM_PARAMETRE": "NITRIFICATION",
+            "UNITE_PARAMETRE": "micromole nitrogen/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "NOUW",
+            "NOM_PARAMETRE": "NITRATE UPTAKE",
+            "UNITE_PARAMETRE": "micromole nitrogen/(m3.day)"
+        },
+        {
+            "CODE_PARAMETRE": "NPKF",
+            "NOM_PARAMETRE": "NUMBER OF NANOPROKARYOTES",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NSCS",
+            "NOM_PARAMETRE": "CURRENT NORTH STD. DEVIATION",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "NSCT",
+            "NOM_PARAMETRE": "CURRENT NORTH COMPONENT",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "NTAP",
+            "NOM_PARAMETRE": "NITRATE IN SEDIMENT PORE WATER",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTAW",
+            "NOM_PARAMETRE": "NITRATE (NO3-N) CONTENT",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NTIP",
+            "NOM_PARAMETRE": "NITRITE IN SEDIMENT PORE WATER",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTIW",
+            "NOM_PARAMETRE": "NITRITE (NO2-N) CONTENT",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NTOT",
+            "NOM_PARAMETRE": "TOTAL NITROGEN (N) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTRA",
+            "NOM_PARAMETRE": "NITRATE (NO3-N) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTRI",
+            "NOM_PARAMETRE": "NITRITE (NO2-N) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTRS",
+            "NOM_PARAMETRE": "NITRITE IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTRZ",
+            "NOM_PARAMETRE": "NITRATE + NITRITE CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTR1",
+            "NOM_PARAMETRE": "NITRATE IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NTZW",
+            "NOM_PARAMETRE": "NITRATE + NITRITE CONTENT ",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NT1P",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE NITROGEN",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "NUMN",
+            "NOM_PARAMETRE": "NUMBER OF PARTICLES > 0.7 UM",
+            "UNITE_PARAMETRE": "number/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NUMP",
+            "NOM_PARAMETRE": "NUMBER OF PARTICLES 3-80UM",
+            "UNITE_PARAMETRE": "number/m3"
+        },
+        {
+            "CODE_PARAMETRE": "NUNM",
+            "NOM_PARAMETRE": "NUMBER OF PARTICLES >=480UM",
+            "UNITE_PARAMETRE": "number/m3"
+        },
+        {
+            "CODE_PARAMETRE": "N15D",
+            "NOM_PARAMETRE": "DELTA 15N (15N/14N)",
+            "UNITE_PARAMETRE": "per thousand"
+        },
+        {
+            "CODE_PARAMETRE": "N63X",
+            "NOM_PARAMETRE": "N<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "OCCN",
+            "NOM_PARAMETRE": "ORGANIC CARBON IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "OCNT",
+            "NOM_PARAMETRE": "COUNT OF BIOLOGICAL ENTITY",
+            "UNITE_PARAMETRE": "Dimensionless"
+        },
+        {
+            "CODE_PARAMETRE": "OCSD",
+            "NOM_PARAMETRE": "STD DEVIATION ORGANIC CARBON",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "OMMF",
+            "NOM_PARAMETRE": "PART. ORGANIC MATTER FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "ONIS",
+            "NOM_PARAMETRE": "ORGANIC NITROGEN IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "ONSD",
+            "NOM_PARAMETRE": "STD DEVIATION ORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "OPAP",
+            "NOM_PARAMETRE": "OPAL CONTENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "OSAT",
+            "NOM_PARAMETRE": "OXYGEN SATURATION",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "OSMP",
+            "NOM_PARAMETRE": "ORGANIC SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "OXIR",
+            "NOM_PARAMETRE": "ISOTOPIC RATIO O18/O16",
+            "UNITE_PARAMETRE": "per thousand"
+        },
+        {
+            "CODE_PARAMETRE": "PB40",
+            "NOM_PARAMETRE": "Pb>0.4/0.45um IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PB45",
+            "NOM_PARAMETRE": "Pb<0.4/0.45um IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PB63",
+            "NOM_PARAMETRE": "Pb<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PCEF",
+            "NOM_PARAMETRE": "NUMBER OF PICOEUKARYOTES",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PCEW",
+            "NOM_PARAMETRE": "NUMBER OF SW PICOEUCARYOTES",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PCOW",
+            "NOM_PARAMETRE": "CARBON DIOXIDE IN WATER",
+            "UNITE_PARAMETRE": "microatmosphere"
+        },
+        {
+            "CODE_PARAMETRE": "PCO2",
+            "NOM_PARAMETRE": "CO2 PART. PRES IN DRY/WET GAS",
+            "UNITE_PARAMETRE": "microatmosphere"
+        },
+        {
+            "CODE_PARAMETRE": "PCPW",
+            "NOM_PARAMETRE": "PENTACHLOROPHENOL IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PC1P",
+            "NOM_PARAMETRE": "PARTICULATE ORGANIC CARBON/POC",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PENW",
+            "NOM_PARAMETRE": "PENTACHLOROBIPHENYL IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PERP",
+            "NOM_PARAMETRE": "PERIDININE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PETD",
+            "NOM_PARAMETRE": "POTENTIAL EVAPOTRANSPIRATION",
+            "UNITE_PARAMETRE": "millimeter/day"
+        },
+        {
+            "CODE_PARAMETRE": "PETW",
+            "NOM_PARAMETRE": "TOTAL PETROLEUM IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHAS",
+            "NOM_PARAMETRE": "PHAEOPIGMENTS IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PHCW",
+            "NOM_PARAMETRE": "PHYTOPLANKTON ABUNDANCE",
+            "UNITE_PARAMETRE": "10+3 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHEA",
+            "NOM_PARAMETRE": "PHEOPHYTIN-A",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHEB",
+            "NOM_PARAMETRE": "PHEOPHYTIN-B",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHEC",
+            "NOM_PARAMETRE": "PHEOPHYTIN-C",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHES",
+            "NOM_PARAMETRE": "PHENANTHRENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PHEW",
+            "NOM_PARAMETRE": "PHENANTHRENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHE2",
+            "NOM_PARAMETRE": "PHAEOPHYTIN >2 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHE3",
+            "NOM_PARAMETRE": "PHAEOPHYTIN >20 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHE4",
+            "NOM_PARAMETRE": "PHAEOPHYTIN >10 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHE5",
+            "NOM_PARAMETRE": "PHAEOPHYTIN >3 <20 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHE6",
+            "NOM_PARAMETRE": "PHAEOPHYTIN <3 MICRON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHNS",
+            "NOM_PARAMETRE": "SEDIMENT PHENOLS",
+            "UNITE_PARAMETRE": "microgram/g"
+        },
+        {
+            "CODE_PARAMETRE": "PHOP",
+            "NOM_PARAMETRE": "PHOSPHATE IN SEDIMT PORE WATER",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHOS",
+            "NOM_PARAMETRE": "PHOSPHATE (PO4-P) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHOW",
+            "NOM_PARAMETRE": "PHOSPHATE (PO4-P) CONTENT",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PHPH",
+            "NOM_PARAMETRE": "PH",
+            "UNITE_PARAMETRE": "pH unit"
+        },
+        {
+            "CODE_PARAMETRE": "PHSP",
+            "NOM_PARAMETRE": "PHOSPHORUS IN SUSP. MATT.",
+            "UNITE_PARAMETRE": "millimole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PHSS",
+            "NOM_PARAMETRE": "PHOSPHATE IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PHTF",
+            "NOM_PARAMETRE": "PHAEOPIGMENTS VERTICAL FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "PHTP",
+            "NOM_PARAMETRE": "TOTAL PHEOPHYTINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PN1P",
+            "NOM_PARAMETRE": "PARTICULATE ORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "POCF",
+            "NOM_PARAMETRE": "PART. ORGANIC CARBON FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "POCP",
+            "NOM_PARAMETRE": "PARTICULATE ORGANIC CARBON/POC",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PODW",
+            "NOM_PARAMETRE": "DISSOLVED ORGANIC PHOSPHORUS",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PONP",
+            "NOM_PARAMETRE": "PARTICULATE ORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PO63",
+            "NOM_PARAMETRE": "PORG<63um in DRY W. SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PPKF",
+            "NOM_PARAMETRE": "NUMBER OF PICOPROKARYOTES",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PP1P",
+            "NOM_PARAMETRE": "PART. ORGANIC PHOSPHORUS (P)",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PRAB",
+            "NOM_PARAMETRE": "PRESENCE OR ABSENCE OF ENTITY",
+            "UNITE_PARAMETRE": "Dimensionless"
+        },
+        {
+            "CODE_PARAMETRE": "PRCF",
+            "NOM_PARAMETRE": "NUMBER OF PROCHLOROCOCCUS",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PRCW",
+            "NOM_PARAMETRE": "NUMBER OF SW PROCHLOROCOCCUS",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PRES",
+            "NOM_PARAMETRE": "SEA PRESSURE sea surface=0",
+            "UNITE_PARAMETRE": "decibar=10000 pascals"
+        },
+        {
+            "CODE_PARAMETRE": "PROT",
+            "NOM_PARAMETRE": "PROTEIN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PRRD",
+            "NOM_PARAMETRE": "PRECIPITATION RATE",
+            "UNITE_PARAMETRE": "millimeter/day"
+        },
+        {
+            "CODE_PARAMETRE": "PRRT",
+            "NOM_PARAMETRE": "PRECIPITATION RATE",
+            "UNITE_PARAMETRE": "millimeter/hour"
+        },
+        {
+            "CODE_PARAMETRE": "PRSX",
+            "NOM_PARAMETRE": "Pr IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PR63",
+            "NOM_PARAMETRE": "Pr<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PSAL",
+            "NOM_PARAMETRE": "PRACTICAL SALINITY",
+            "UNITE_PARAMETRE": "P.S.U."
+        },
+        {
+            "CODE_PARAMETRE": "PTC1",
+            "NOM_PARAMETRE": "PENTACHLOROBIPHENYL101 IN SED.",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PTC2",
+            "NOM_PARAMETRE": "PENTACHLOROBIPHENYL118 IN SED.",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PTNP",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE NITROGEN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PTPP",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE PHOSPHORUS",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PTZF",
+            "NOM_PARAMETRE": "PROTOZOA PPC FLUX",
+            "UNITE_PARAMETRE": "milligram carbon/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "PT1P",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE PHOSPHORUS",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PT63",
+            "NOM_PARAMETRE": "PTOT<63um in DRY W. SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PXAP",
+            "NOM_PARAMETRE": "PRASINOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "PYRS",
+            "NOM_PARAMETRE": "PYRENE IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "PYRW",
+            "NOM_PARAMETRE": "PYRENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "RB63",
+            "NOM_PARAMETRE": "Rb<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "RDIN",
+            "NOM_PARAMETRE": "INCIDENT RADIATION",
+            "UNITE_PARAMETRE": "watt/m2"
+        },
+        {
+            "CODE_PARAMETRE": "REDS",
+            "NOM_PARAMETRE": "REDOX POTENTIAL",
+            "UNITE_PARAMETRE": "millivolt"
+        },
+        {
+            "CODE_PARAMETRE": "RELH",
+            "NOM_PARAMETRE": "RELATIVE HUMIDITY",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "RVFL",
+            "NOM_PARAMETRE": "RIVER FLOW RATE",
+            "UNITE_PARAMETRE": "m3/second"
+        },
+        {
+            "CODE_PARAMETRE": "SACC",
+            "NOM_PARAMETRE": "SALINITY ACCURACY",
+            "UNITE_PARAMETRE": "."
+        },
+        {
+            "CODE_PARAMETRE": "SAMA",
+            "NOM_PARAMETRE": "SIGNAL RETURN AMPLITUDE",
+            "UNITE_PARAMETRE": "decibel"
+        },
+        {
+            "CODE_PARAMETRE": "SAND",
+            "NOM_PARAMETRE": "SAND IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "SBSX",
+            "NOM_PARAMETRE": "Sb IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SB63",
+            "NOM_PARAMETRE": "Sb<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SC63",
+            "NOM_PARAMETRE": "Sc<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SECC",
+            "NOM_PARAMETRE": "SECCHI DISK DEPTH",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "SILT",
+            "NOM_PARAMETRE": "SILT IN THE SEDIMENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "SIOF",
+            "NOM_PARAMETRE": "PART. BIOGENIC Si FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "SIOS",
+            "NOM_PARAMETRE": "SEDIMENT BIOGENIC SiO2",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "SI63",
+            "NOM_PARAMETRE": "Si<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SLCA",
+            "NOM_PARAMETRE": "SILICATE (SIO4-SI) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SLCP",
+            "NOM_PARAMETRE": "PARTICULATE ORGANIC SILICA(SI)",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SLCW",
+            "NOM_PARAMETRE": "SILICATE (SIO4-SI) CONTENT",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SLC1",
+            "NOM_PARAMETRE": "SILICATE IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SLEV",
+            "NOM_PARAMETRE": "OBSERVED SEA LEVEL",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "SLVR",
+            "NOM_PARAMETRE": "RESIDUAL(OBS - PRED SEA LEVEL)",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "SMSX",
+            "NOM_PARAMETRE": "Sm IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SM63",
+            "NOM_PARAMETRE": "Sm<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SNCF",
+            "NOM_PARAMETRE": "NUMBER OF SYNECHOCOCCUS",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SNCW",
+            "NOM_PARAMETRE": "NUMBER OF SW SYNECHOCOCCUS",
+            "UNITE_PARAMETRE": "10+6 cell/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SNSX",
+            "NOM_PARAMETRE": "Sn IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SN63",
+            "NOM_PARAMETRE": "Sn<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SO4O",
+            "NOM_PARAMETRE": "PORE WATER SULFATE",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SR63",
+            "NOM_PARAMETRE": "Sr<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "SSAL",
+            "NOM_PARAMETRE": "SALINITY (PRE-1978 DEFN)",
+            "UNITE_PARAMETRE": "P.S.U."
+        },
+        {
+            "CODE_PARAMETRE": "SSXX",
+            "NOM_PARAMETRE": "S IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "STYW",
+            "NOM_PARAMETRE": "STYRENE IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "SVEL",
+            "NOM_PARAMETRE": "SOUND VELOCITY",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "SWDR",
+            "NOM_PARAMETRE": "SWELL DIRECTION  REL TRUE N.",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "SWHT",
+            "NOM_PARAMETRE": "SWELL HEIGHT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "SWPR",
+            "NOM_PARAMETRE": "SWELL PERIOD",
+            "UNITE_PARAMETRE": "second"
+        },
+        {
+            "CODE_PARAMETRE": "TBSX",
+            "NOM_PARAMETRE": "Tb IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TB25",
+            "NOM_PARAMETRE": "BLUE LIGHT TRANSMISSION 25CM ",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TB63",
+            "NOM_PARAMETRE": "Tb<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TCCF",
+            "NOM_PARAMETRE": "PART. TOTAL CARBON FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "TCCS",
+            "NOM_PARAMETRE": "SEDIMENT TOTAL CARBON",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TCSD",
+            "NOM_PARAMETRE": "STD DEVIATION TOTAL CARBON",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "TDPW",
+            "NOM_PARAMETRE": "TOTAL DISSOLVED PHOSPHORUS",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TDSW",
+            "NOM_PARAMETRE": "TOTAL DISSOLVED SOLID",
+            "UNITE_PARAMETRE": "kg/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TEMP",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TETS",
+            "NOM_PARAMETRE": "TETRACHLOROBIPHENYL SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TETW",
+            "NOM_PARAMETRE": "TETRACHLOROBIPHENYL IN WATER",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TE01",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE02",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE03",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE04",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE05",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE06",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE07",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE08",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE09",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE10",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE11",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TE12",
+            "NOM_PARAMETRE": "SEA TEMPERATURE",
+            "UNITE_PARAMETRE": "Celsius degree"
+        },
+        {
+            "CODE_PARAMETRE": "TH4P",
+            "NOM_PARAMETRE": "PARTICULATE 234TH ACTIVTY",
+            "UNITE_PARAMETRE": "Bq/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TH4W",
+            "NOM_PARAMETRE": "DISSOLVED 234TH",
+            "UNITE_PARAMETRE": "Bq/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TICS",
+            "NOM_PARAMETRE": "TOTAL INORGANIC CARBON SEDIMEN",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TICW",
+            "NOM_PARAMETRE": "TOTAL INORGANIC CARBON",
+            "UNITE_PARAMETRE": "micromole/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TIME",
+            "NOM_PARAMETRE": "TIME WITHIN DAY",
+            "UNITE_PARAMETRE": "hhmmss"
+        },
+        {
+            "CODE_PARAMETRE": "TINW",
+            "NOM_PARAMETRE": "DISSOLVED INORGANIC NITROGEN",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TLSX",
+            "NOM_PARAMETRE": "Tl IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TL63",
+            "NOM_PARAMETRE": "Tl<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TMSX",
+            "NOM_PARAMETRE": "Tm IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TM63",
+            "NOM_PARAMETRE": "Tm<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TNIS",
+            "NOM_PARAMETRE": "TOTAL NITROGEN IN SEDIMENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TNNF",
+            "NOM_PARAMETRE": "PART. TOTAL NITROGEN FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "TNNS",
+            "NOM_PARAMETRE": "SEDIMENT TOTAL NITROGEN",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TOCS",
+            "NOM_PARAMETRE": "SEDIMENT TOTAL ORGANIC CARBON",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TOCW",
+            "NOM_PARAMETRE": "TOTAL ORGANIC CARBON",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TOMP",
+            "NOM_PARAMETRE": "ORGANIC MATTER CONTENT",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TOTS",
+            "NOM_PARAMETRE": "TOTAL CARBON IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/g"
+        },
+        {
+            "CODE_PARAMETRE": "TPAW",
+            "NOM_PARAMETRE": "DISS. TRIPHOSPHATE ADENOSINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TPCW",
+            "NOM_PARAMETRE": "TOTAL PARTICULATE CARBON",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TPHP",
+            "NOM_PARAMETRE": "TOTAL PHAEOPIGMENTS",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TPHS",
+            "NOM_PARAMETRE": "TOTAL PHOSPHORUS (P) CONTENT",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TRBB",
+            "NOM_PARAMETRE": "TRIBUTYLTIN CATION IN BIOTA",
+            "UNITE_PARAMETRE": "microgram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TRCS",
+            "NOM_PARAMETRE": "TRICHLOROBIPHENYL IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "TREW",
+            "NOM_PARAMETRE": "DISSOLVED TRITIUM ERROR",
+            "UNITE_PARAMETRE": "TU"
+        },
+        {
+            "CODE_PARAMETRE": "TRIW",
+            "NOM_PARAMETRE": "DISSOLVED TRITIUM",
+            "UNITE_PARAMETRE": "TU"
+        },
+        {
+            "CODE_PARAMETRE": "TR10",
+            "NOM_PARAMETRE": "RED LIGHT TRANSMISSION 10CM",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TR25",
+            "NOM_PARAMETRE": "RED LIGHT TRANSMISSION 25CM",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TSMF",
+            "NOM_PARAMETRE": "TOTAL MASS FLUX",
+            "UNITE_PARAMETRE": "milligram/(m2.day)"
+        },
+        {
+            "CODE_PARAMETRE": "TSMP",
+            "NOM_PARAMETRE": "TOTAL SUSPENDED MATTER",
+            "UNITE_PARAMETRE": "gram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "TUR2",
+            "NOM_PARAMETRE": "LIGHT ATTENUATION COEFFICIENT",
+            "UNITE_PARAMETRE": "m-1"
+        },
+        {
+            "CODE_PARAMETRE": "TUR3",
+            "NOM_PARAMETRE": "LIGHT TRANSMISSION",
+            "UNITE_PARAMETRE": "%"
+        },
+        {
+            "CODE_PARAMETRE": "TUR4",
+            "NOM_PARAMETRE": "TURBIDITY",
+            "UNITE_PARAMETRE": "N.T.U Nephelo Turb. Unit"
+        },
+        {
+            "CODE_PARAMETRE": "TUR5",
+            "NOM_PARAMETRE": "TURBIDITY",
+            "UNITE_PARAMETRE": "relative unit"
+        },
+        {
+            "CODE_PARAMETRE": "TUR6",
+            "NOM_PARAMETRE": "TURBIDITY",
+            "UNITE_PARAMETRE": "milliF.T.U Formaz Turb Unit"
+        },
+        {
+            "CODE_PARAMETRE": "TXAP",
+            "NOM_PARAMETRE": "DIATOXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "UPTH",
+            "NOM_PARAMETRE": "BACTERIAL PRODUCTION(THYM. UP)",
+            "UNITE_PARAMETRE": "nanomole/m3/hour"
+        },
+        {
+            "CODE_PARAMETRE": "UPTS",
+            "NOM_PARAMETRE": "BACT. PROD. STANDARD DEVIATION",
+            "UNITE_PARAMETRE": "nanomole/m3/hour"
+        },
+        {
+            "CODE_PARAMETRE": "UREA",
+            "NOM_PARAMETRE": "UREA",
+            "UNITE_PARAMETRE": "millimole/m3"
+        },
+        {
+            "CODE_PARAMETRE": "UVCT",
+            "NOM_PARAMETRE": "UPWARD CURRENT VELOCITY",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "U63X",
+            "NOM_PARAMETRE": "U<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "VANW",
+            "NOM_PARAMETRE": "VANADIUM IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "VAVH",
+            "NOM_PARAMETRE": "AVER. HEIGHT HIGHEST 1/3 WAVE",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VAVT",
+            "NOM_PARAMETRE": "AVER. PERIOD HIGHEST 1/3 WAVE",
+            "UNITE_PARAMETRE": "second"
+        },
+        {
+            "CODE_PARAMETRE": "VCMX",
+            "NOM_PARAMETRE": "MAX CREST TROUGH WAVE HEIGHT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VCSP",
+            "NOM_PARAMETRE": "VERTICAL CURRENT SPEED",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "VDIR",
+            "NOM_PARAMETRE": "WAVE DIRECTION REL. TRUE NORTH",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "VEPK",
+            "NOM_PARAMETRE": "WAVE SPECTRUM PEAK ENERGY",
+            "UNITE_PARAMETRE": "m2.second"
+        },
+        {
+            "CODE_PARAMETRE": "VERR",
+            "NOM_PARAMETRE": "VELOCITY ERROR",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "VERT",
+            "NOM_PARAMETRE": "VERTICAL DISPLACEMENT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VHM0",
+            "NOM_PARAMETRE": "SPECTRAL SIGNIF. WAVE HEIGHT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VIAW",
+            "NOM_PARAMETRE": "VIRUS ABUNDANCE IN SEA WATER",
+            "UNITE_PARAMETRE": "10+9 cell/dm3"
+        },
+        {
+            "CODE_PARAMETRE": "VIOW",
+            "NOM_PARAMETRE": "VIOLAXANTHIN",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "VMXL",
+            "NOM_PARAMETRE": "MAXIMUM WAVE LEVEL",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VOCP",
+            "NOM_PARAMETRE": "VOLUME CONC. OF PARTICLES",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "VOLF",
+            "NOM_PARAMETRE": "SAMPLE VOLUME BY FLOW METER",
+            "UNITE_PARAMETRE": "m3"
+        },
+        {
+            "CODE_PARAMETRE": "VPED",
+            "NOM_PARAMETRE": "WAVE SPECTRUM PEAK ENERGY DIR.",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "VPSP",
+            "NOM_PARAMETRE": "DIR. SPREADING AT WAVE PEAK",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "VSAM",
+            "NOM_PARAMETRE": "VOLUME SAMPLED OF WATER BODY",
+            "UNITE_PARAMETRE": "m3"
+        },
+        {
+            "CODE_PARAMETRE": "VSMC",
+            "NOM_PARAMETRE": "SPECT. MOMENT(0,2) WAVE PERIOD",
+            "UNITE_PARAMETRE": "second"
+        },
+        {
+            "CODE_PARAMETRE": "VTDH",
+            "NOM_PARAMETRE": "SIGNIFICANT WAVE HEIGHT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "VTPK",
+            "NOM_PARAMETRE": "WAVE SPECTRUM PEAK PERIOD",
+            "UNITE_PARAMETRE": "second"
+        },
+        {
+            "CODE_PARAMETRE": "VTZA",
+            "NOM_PARAMETRE": "AVER ZERO CROSSING WAVE PERIOD",
+            "UNITE_PARAMETRE": "second"
+        },
+        {
+            "CODE_PARAMETRE": "VZMX",
+            "NOM_PARAMETRE": "MAXI ZERO CROSSING WAVE HEIGHT",
+            "UNITE_PARAMETRE": "meter"
+        },
+        {
+            "CODE_PARAMETRE": "V63X",
+            "NOM_PARAMETRE": "V<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "WDIR",
+            "NOM_PARAMETRE": "WIND DIRECTION REL. TRUE NORTH",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "WMSP",
+            "NOM_PARAMETRE": "WIND SPEED - MAX AVER PER 2 MN",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "WO63",
+            "NOM_PARAMETRE": "W<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "WSPD",
+            "NOM_PARAMETRE": "HORIZONTAL WIND SPEED",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "WSPE",
+            "NOM_PARAMETRE": "WIND SPEED EASTWARD COMPONENT",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "WSPN",
+            "NOM_PARAMETRE": "WIND SPEED NORTHWARD COMPONENT",
+            "UNITE_PARAMETRE": "meter/second"
+        },
+        {
+            "CODE_PARAMETRE": "WSTE",
+            "NOM_PARAMETRE": "WIND STRESS EAST COMPONENT",
+            "UNITE_PARAMETRE": "newton/m2"
+        },
+        {
+            "CODE_PARAMETRE": "WSTN",
+            "NOM_PARAMETRE": "WIND STRESS NORTH COMPONENT",
+            "UNITE_PARAMETRE": "newton/m2"
+        },
+        {
+            "CODE_PARAMETRE": "XCO2",
+            "NOM_PARAMETRE": "CO2 MOLE FRACTION IN DRY GAS",
+            "UNITE_PARAMETRE": "ppm"
+        },
+        {
+            "CODE_PARAMETRE": "YBSX",
+            "NOM_PARAMETRE": "Yb IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "YB63",
+            "NOM_PARAMETRE": "Yb<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "YEAR",
+            "NOM_PARAMETRE": "YEAR",
+            "UNITE_PARAMETRE": "yyyy"
+        },
+        {
+            "CODE_PARAMETRE": "Y63X",
+            "NOM_PARAMETRE": "Y<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ZINS",
+            "NOM_PARAMETRE": "ZINC IN SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ZINW",
+            "NOM_PARAMETRE": "ZINC IN WATER BODY",
+            "UNITE_PARAMETRE": "milligram/m3"
+        },
+        {
+            "CODE_PARAMETRE": "ZNTH",
+            "NOM_PARAMETRE": "TILT OF MEASUREMENT PLATFORM",
+            "UNITE_PARAMETRE": "degree"
+        },
+        {
+            "CODE_PARAMETRE": "ZN63",
+            "NOM_PARAMETRE": "Zn<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ZR63",
+            "NOM_PARAMETRE": "Zr<63um IN DRY WEIGHT SEDIMENT",
+            "UNITE_PARAMETRE": "milligram/kg"
+        },
+        {
+            "CODE_PARAMETRE": "ZXAP",
+            "NOM_PARAMETRE": "ZEAXANTHINE",
+            "UNITE_PARAMETRE": "milligram/m3"
+        }
+    ]
+}
