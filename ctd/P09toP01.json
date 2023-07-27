@@ -49,7 +49,7 @@
       "fractional_part": 2  
    },
    "DOX2":{
-      "name_IOC":"SEA PRESSURE sea surface=0",
+      "name_IOC":"DISSOLVED OXYGEN",
       "units_IOC":"micromole/kg",
       "name_P01":"DOXMZZXX",
       "name_P06":"KGUM",
@@ -69,6 +69,13 @@
       "name_P06":"UMMC",
       "fractional_part": 4 
    },
+   "FLUO":{
+      "name_IOC":"FLUORESCENCE",
+      "units_IOC":"relative unit",
+      "name_P01":"FLUOZZZZ",
+      "name_P06":"UUUU",
+      "fractional_part": 4 
+   },   
    "TUR4":{
       "name_IOC":"TURBIDITY",
       "units_IOC":"N.T.U Nephelo Turb. Unit",
@@ -82,5 +89,12 @@
       "name_P01":"PARERXUD",
       "name_P06":"UMES",
       "fractional_part": 3
+   },
+   "SVEL":{
+      "name_IOC":"SOUND VELOCITY",
+      "units_IOC":"meter/second",
+      "name_P01":"SVELXXXX",
+      "name_P06":"UVAA",
+      "fractional_part": 2
    }   
 }

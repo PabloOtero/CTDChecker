@@ -20,7 +20,7 @@ import pkg_resources
 
 CSR_URL = "http://seadata.bsh.de/isoCodelists/sdnCodelists/csrCodeList.xml"
 CSR_LOCAL_FILE = "csrCodeList.xml"
-CDI_TEMPLATE = "cdi_ctd_ieo_template.xml"
+CDI_TEMPLATE = "./ctd/cdi_ctd_ieo_template.xml"
 
 
 def download_sdn_lists():

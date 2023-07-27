@@ -11,7 +11,15 @@ from flask import flash
 import lxml.etree as ET
 import numpy as np
 import pandas as pd
-flash_messages = True
+#flash_messages = False
+
+
+import config
+if config.RUN_LOCALLY:
+    flash_messages = False
+else:
+    flash_messages = True
+
 
 def _basename(fname):
     """Return file name without path."""
@@ -807,16 +815,27 @@ def from_cnv(fname):
     metadata["names"] = unique
 
     f.seek(0)
-    df = pd.read_fwf(
+    # df = pd.read_fwf(
+    #     f,
+    #     header=None,
+    #     index_col=None,
+    #     names=metadata["names"],
+    #     skiprows=metadata["skiprows"],
+    #     delim_whitespace=True,
+    #     skip_blank_lines=True,
+    #     widths=[11] * len(metadata["names"]),
+    # )
+    df = pd.read_table(
         f,
         header=None,
         index_col=None,
         names=metadata["names"],
         skiprows=metadata["skiprows"],
         delim_whitespace=True,
-        skip_blank_lines=True,
-        widths=[11] * len(metadata["names"]),
+        skip_blank_lines=True
     )
+    
+    
     f.close()
 
     key_set = False
@@ -993,12 +1012,15 @@ def parse_csr(fname):
             flash('Cannot retrieve custodian EDMO name from CSR file', "warning")  
 
     try:
-        full_path = "{http://www.isotc211.org/2005/gmd}contact/{http://www.isotc211.org/2005/gmd}CI_ResponsibleParty/{http://www.isotc211.org/2005/gmd}contactInfo/"        
+        full_path = "{http://www.isotc211.org/2005/gmd}contact/{http://www.isotc211.org/2005/gmd}CI_ResponsibleParty/{http://www.isotc211.org/2005/gmd}contactInfo/"               
         node = root.find(full_path)
         custodian_contact =  ET.tostring(node, encoding="unicode", method="xml")    
         idx_start = custodian_contact.find(' ')
         idx_end = custodian_contact.find('>')
         custodian_contact = custodian_contact.replace(custodian_contact[idx_start:idx_end],'').rstrip("\n").rstrip()
+        #Sometimes add unexpected content to the node. We made his to secure the finding
+        idx_end = custodian_contact.find('</gmd:CI_Contact>')
+        custodian_contact = custodian_contact.replace(custodian_contact[idx_end+17:],'').rstrip("\n").rstrip()
     except:
         print('WARNING: Cannot retrieve custodian contact information from CSR file')
         if flash_messages:
@@ -1019,6 +1041,9 @@ def parse_csr(fname):
         idx_start = originator_contact.find(' ')
         idx_end = originator_contact.find('>')
         originator_contact = originator_contact.replace(originator_contact[idx_start:idx_end],'').rstrip("\n").rstrip()
+        #Sometimes add unexpected content to the node. We made his to secure the finding
+        idx_end = originator_contact.find('</gmd:CI_Contact>')
+        originator_contact = originator_contact.replace(originator_contact[idx_end+17:],'').rstrip("\n").rstrip()
     except:
         print('WARNING: Cannot retrieve originator contact information from CSR file')
         if flash_messages:
@@ -1035,10 +1060,13 @@ def parse_csr(fname):
     try:
         full_path = "{http://www.isotc211.org/2005/gmd}identificationInfo/{http://www.seadatanet.org}SDN_DataIdentification/{http://www.isotc211.org/2005/gmd}pointOfContact/{http://www.isotc211.org/2005/gmd}CI_ResponsibleParty/{http://www.isotc211.org/2005/gmd}contactInfo/{http://www.isotc211.org/2005/gmd}CI_Contact"        
         node = root.find(full_path)
-        pointofcontact_contact =  ET.tostring(node, encoding="unicode", method="xml")
+        pointofcontact_contact =  ET.tostring(node, encoding="unicode", method="xml")             
         idx_start = pointofcontact_contact.find(' ')
         idx_end = pointofcontact_contact.find('>')
         pointofcontact_contact = pointofcontact_contact.replace(pointofcontact_contact[idx_start:idx_end],'').rstrip("\n").rstrip()
+        #Sometimes add unexpected content to the node. We made his to secure the finding
+        idx_end = pointofcontact_contact.find('</gmd:CI_Contact>')
+        pointofcontact_contact = pointofcontact_contact.replace(pointofcontact_contact[idx_end+17:],'').rstrip("\n").rstrip()    
     except:
         print('WARNING: Cannot retrieve point of contact information from CSR file')
         if flash_messages:

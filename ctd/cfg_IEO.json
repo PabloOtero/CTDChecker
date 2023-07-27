@@ -7,60 +7,152 @@
 	"max_speed": 15
     },
 "PRES": {
+    "name_IOC":"SEA PRESSURE sea surface=0",
+    "units_IOC":"decibar=10000 pascals",
+    "name_P01":"PRESPR01",
+    "P01_preferred_label": "Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level",
+    "name_P06":"UPDB",
+    "P06_preferred_label": "Decibars",
+    "cf_standard_name": "sea_water_pressure",
+    "fractional_part": 0,
     "instrument_range": {
         "minval": 0,
         "maxval": 10500
         }
     },
 "CNDC": {
+    "name_IOC":"ELECTRICAL CONDUCTIVITY",
+    "units_IOC":"millimho/centimeter",
+    "name_P01":"CNDCZZ01",
+    "P01_preferred_label": "Electrical conductivity of the water body",   
+    "name_P06":"UECA",
+    "P06_preferred_label": "Siemens per metre",
+    "cf_standard_name": "sea_water_electrical_conductivity",
+    "fractional_part": 4,
     "instrument_range": {
         "minval": 0,
         "maxval": 9
         }
     },
 "SVEL": {
+    "name_IOC":"SOUND VELOCITY",
+    "units_IOC":"meter/second",
+    "name_P01":"SVELXXXX",
+    "P01_preferred_label": "Sound velocity in the water body",       
+    "name_P06":"UVAA",
+    "P06_preferred_label": "Metres per second",
+    "cf_standard_name": "speed_of_sound_in_sea_water",
+    "fractional_part": 2,
     "instrument_range": {
         "minval": 1450,
         "maxval": 1600
         }
     },
 "DOX1": {
+    "name_IOC":"DISSOLVED OXYGEN",
+    "units_IOC":"ml/l",
+    "name_P01":"DOXYZZXX",
+    "P01_preferred_label": "Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase]",
+    "name_P06":"UMLL",
+    "P06_preferred_label": "Millilitres per litre",
+    "cf_standard_name": "volume_fraction_of_oxygen_in_sea_water",    
+    "fractional_part": 2, 
     "instrument_range": {
         "minval": 0,
         "maxval": 40
         }
     },
 "DOX2": {
+    "name_IOC":"DISSOLVED OXYGEN",
+    "units_IOC":"micromole/kg",
+    "name_P01":"DOXMZZXX",
+    "P01_preferred_label": "Concentration of oxygen {O2 CAS 7782-44-7} per unit mass of the water body [dissolved plus reactive particulate phase]",
+    "name_P06":"KGUM",
+    "P06_preferred_label": "Micromoles per kilogram",
+    "cf_standard_name": "mass_concentration_of_oxygen_in_sea_water",   
+    "fractional_part": 2, 
     "instrument_range": {
         "minval": 0,
         "maxval": 2000
         }
     },
 "OSAT": {
+    "name_IOC":"OXYGEN SATURATION",
+    "units_IOC":"%",
+    "name_P01":"OXYSZZ01",
+    "P01_preferred_label": "Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]",
+    "name_P06":"UPCT",
+    "P06_preferred_label": "Percent",
+    "cf_standard_name": "fractional_saturation_of_oxygen_in_sea_water",   
+    "fractional_part": 3,
     "instrument_range": {
         "minval": 0,
         "maxval": 120
         }
     },
 "FLU2": {
+    "name_IOC":"FLUORESCENCE",
+    "units_IOC":"milligram/m3",
+    "name_P01":"CPHLPM01",
+    "P01_preferred_label": "Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate >unknown phase] by in-situ chlorophyll fluorometer and manufacturer's calibration applied",
+    "name_P06":"UMMC",
+    "P06_preferred_label": "Milligrams per cubic metre",  
+    "fractional_part": 4, 
     "instrument_range": {
         "minval": 0,
         "maxval": 150
         }
     },
+"FLUO": {
+    "name_IOC":"FLUORESCENCE",
+    "units_IOC":"relative unit",
+    "name_P01":"FLUOZZZZ",
+    "P01_preferred_label": "Fluorescence of the water body",
+    "name_P06":"UUUU",
+    "P06_preferred_label": "Dimensionless",
+    "fractional_part": 4,
+    "instrument_range": {
+        "minval": 0,
+        "maxval": 1
+        }
+    },	
 "TUR4": {
+    "name_IOC":"TURBIDITY",
+    "units_IOC":"N.T.U Nephelo Turb. Unit",
+    "name_P01":"TURBXXXX",
+    "P01_preferred_label": "Turbidity of water in the water body",
+    "name_P06":"USTU",
+    "P06_preferred_label": "Nephelometric Turbidity Units",
+    "cf_standard_name": "sea_water_turbidityr",
+    "fractional_part": 2,
     "instrument_range": {
         "minval": 0,
         "maxval": 1000
         }
     },
 "LGHT": {
+    "name_IOC":"LIGHT IRRADIANCE IMMERGED PAR",
+    "units_IOC":"micromole photon/(m2.second)",
+    "name_P01":"PARERXUD",
+    "P01_preferred_label": "Downwelling vector irradiance as photons of electromagnetic radiation (PAR wavelengths) in the water body by cosine-collector radiometer",
+    "name_P06":"UMES",
+    "P06_preferred_label": "MicroEinsteins per square metre per second",
+    "cf_standard_name": "downwelling_photosynthetic_photon_spherical_irradiance_in_sea_water",
+    "fractional_part": 3,
     "instrument_range": {
         "minval": 0,
         "maxval": 5000
         }
     },                             
 "TEMP": {
+    "name_IOC":"SEA TEMPERATURE",
+    "units_IOC":"Celsius degree",
+    "name_P01":"TEMPPR01",
+    "P01_preferred_label": "Temperature of the water body",
+    "name_P06":"UPAA",
+    "P06_preferred_label": "Degrees Celsius",
+    "cf_standard_name": "sea_water_temperature",
+    "fractional_part": 3,
     "pstep": null,
     "instrument_range": {
         "minval": -5,
@@ -225,6 +317,14 @@
         }
     },
 "PSAL": {
+    "name_IOC":"PRACTICAL SALINITY",
+    "units_IOC":"P.S.U.",
+    "name_P01":"PSLTZZ01",
+    "P01_preferred_label": "Practical salinity of the water body",
+    "name_P06":"UUUU",
+    "P06_preferred_label": "Dimensionless",
+    "cf_standard_name": "sea_water_practical_salinity",
+    "fractional_part": 4,
     "woa_normbias": {
         "threshold": 10
         },

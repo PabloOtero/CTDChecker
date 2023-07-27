@@ -5,7 +5,13 @@ from pandas import Series
 from math import sin, cos, sqrt, atan2, radians
 from flask import flash
 from pyxylookup import pyxylookup
-flash_messages = True
+#flash_messages = False
+
+import config
+if config.RUN_LOCALLY:
+    flash_messages = False
+else:
+    flash_messages = True
 
 def _extrap1d(interpolator):
     """
