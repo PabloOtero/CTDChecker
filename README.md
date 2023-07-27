@@ -4,7 +4,7 @@
 
 - Import ocean vertical profiles (SeaBird CTD files)
 - Apply quality control (flags)
-- Reformat to MedAtlas format
+- Reformat to MedAtlas format or netCDF-CF-SDN Complaint
 - Create metadata for each profile
 - Plot stations
 - Show warnings and helpful info on the screen
@@ -40,6 +40,12 @@ Download and install all components in a virtual environment. The main file is `
 
 For production environments have a look at the [deployment] documentation.
 
+## Upgrade
+
+To add more variables or modify the output parameters, you must modify some files inside the *ctd* folder:
+
+- SBEtoP09.json: in this file you must map your SeaBird variable to the P09 vocabulary
+- cfg_IEO.json: this is a configuration file with specific requirements of IEO, as for example, decimal digits. These are the output variables. 
 
 ## About this software
 
