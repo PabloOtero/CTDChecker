@@ -32,8 +32,10 @@
   
 
 	<div class="jumbotron" style="padding: 2rem 2rem; margin-bottom: 0;">
-	  <h1 class="display-4"><img src="../static/img/ieo.png" style="height: 80px">IEO CTD Checker 	  	  <a class="btn btn-info btn-md" href="http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker" role="button">Learn more</a></h1>
-	  <p class="lead">Quality control check of CTD data files and conversion to <a href="https://www.seadatanet.org/Standards/Data-Transport-Formats">ASCII MedAtlas format</a>. Figures and metadata (<a href="https://www.seadatanet.org/Metadata/CDI-Common-Data-Index">CDIs</a>) are also generated.</p>
+	  <h1 class="display-4">
+    	  <img src="../static/img/logo-ieo-csic.png" style="height: 80px">IEO CTD Checker 	  	  
+      </h1>
+	  <p class="lead">Quality control check of CTD data files and conversion to <a href="https://www.seadatanet.org/Standards/Data-Transport-Formats">ASCII MedAtlas</a> and to <a href="https://www.seadatanet.org/Standards/Data-Transport-Formats">SeaDataNet CF-Complaint netcdf</a> files. Figures and metadata (<a href="https://www.seadatanet.org/Metadata/CDI-Common-Data-Index">CDIs</a>) are also generated.</p>
 	</div>
 
         <!-- Horizontal Steppers -->
@@ -80,14 +82,31 @@
 	
 		<div class="col-3">
 		<div class="d-flex justify-content-center">
-			<div class="card" style="width: 18rem;">
+			<div class="card" style="width: 22rem;">
 			  <img src="./static/img/ctd.jpg" class="card-img-top" alt="...">
- <div class="card-header">Keep in mind!</div>
-  <div class="card-body">
-    <!--<h5 class="card-title">Light card title</h5>-->
-    <p class="card-text">This is a beta version of an application running on a server. <a href="https://flask.palletsprojects.com/en/1.1.x/errorhandling/">Applications fail, servers fail.</a> You shouldn't wait more than 5 minutes to get your results. A known bug is overloading the server (limited to 64Mb), in this case split your uploads is a good solution. If the error persists, consider reporting it to us and/or running the <a href="https://github.com/PabloOtero/CTDChecker">code</a> locally.</p>
-  </div>
-			</div>
+                 <div class="card-header">Keep in mind!</div>
+                  <div class="card-body">
+                    <p class="card-text"><a href="https://flask.palletsprojects.com/en/1.1.x/errorhandling/">Applications fail, servers fail.</a> You shouldn't wait more than 5 minutes to get your results. A known bug is overloading the server (limited to 64Mb), in this case split your uploads is a good solution. If the error persists, consider reporting it to us and/or running the <a href="https://github.com/PabloOtero/CTDChecker">code</a> locally.</p>
+                    
+                        <p>
+                          <a class="btn btn-info btn-md" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            How to cite
+                          </a>
+                          <a class="btn btn-info btn-md" href="http://wiki.ieo.es/books/centro-nacional-de-datos-oceanogr%C3%A1ficos/page/ieo-ctd-checker" role="button">
+                            Learn more
+                          </a>                
+                          <a href="/return-test/" target="blank" class="btn btn-default btn-md"><i class="fas fa-cloud-download-alt pr-2" aria-hidden="true"></i>Download test files</a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body small" font-size="4">
+                            Otero, P. et al. (2021). Simplifying quality control and standardization of CTD data under SeaDataNet requirements, in: Instrumentation Viewpoint 21, p.50. Presented at the MARTECH 21: 9th International Workshop on Marine Technology, Vigo.
+                          </div>
+                        </div>
+                        
+            
+                  </div> 
+                  </div>
 		</div>	
 		</div>
 
@@ -98,24 +117,37 @@
 			
 		<form method="post" action="./" enctype="multipart/form-data">
  			
- 			
+ 			<strong>Choose an option:</strong>
+ 			<br>
             <input type="radio" name="option" value="1" onclick="show1();">
-            <label>Only check data in cnv files</label>
+            <label>Check cnv files (choose if you don't have a CSR file)</label>
               <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
                   title="Upload all your cnv files at once. A new column with flags will be added to your data. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>                
               <br>
 
             
             <input type="radio" name="option" value="2" onclick="show2();" checked="checked">
-            <label>Check data in cnv files, export to MedAtlas and generate SeaDataNet-complaint metadata</label>
+            <label>Check cnv files + generate SeaDataNet-complaint metadata + export to MedAtlas</label>
               <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
                   title="Upload all your cnv files at once and also a CSR file. Your data will be converted to MedAtlas format with a new column with flags. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. A set of figures to help you interpret data will be generated, and also the associated metadata (once per cast). Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>          
+              <br>
+
+            <input type="radio" name="option" value="3" onclick="show2();">
+            <label>Check cnv files + generate SeaDataNet-complaint metadata + export to MedAtlas + export to netcdf (one file per cast)</label>
+              <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
+                  title="Upload all your cnv files at once and also a CSR file. Your data will be converted to SeaDataNet Climate Forecast (CF) complaint netcdf format with flags. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. A set of figures to help you interpret data will be generated, and also the associated metadata (once per cast). Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>          
+              <br>
+
+            <input type="radio" name="option" value="4" onclick="show2();">
+            <label>Check cnv files + generate SeaDataNet-complaint metadata + export to MedAtlas + export to netcdf (one merged file)</label>
+              <a><i class="fas fa-info-circle mx-1 text-right" style="color:#17a2b8;" data-toggle="tooltip" data-placement="top"
+                  title="Upload all your cnv files at once and also a CSR file. Your data will be converted to a merged SeaDataNet Climate Forecast (CF) complaint netcdf format with flags. Main flags: 0) No control 1) Good 3) Probably bad 4) Bad 9) No data. A set of figures to help you interpret data will be generated, and also the associated metadata (once per cast). Note, that quality control is only done on main oceanographic variables. Press the 'Learn more' button in this page to know more."></i></a>          
               <br>
 
  			<br>
  			
 			<div id="option1" class="input-group mb-3">
-			    <i><strong>Note</strong> that a Cruise Summary Report file (*.xml) is mandatory. If you don't have one, try a search in the 
+			    <i><strong>Note</strong> that with the selected option a Cruise Summary Report file (*.xml) is mandatory. If you don't have one, try a search in the 
 		           <a href="https://csr.seadatanet.org/">SeaDataNet database</a> and download the file as XML to your computer. </i>
 				<div class="custom-file">
 					<input type="file" name="file" class="custom-file-input" id="inputGroupFile01"/>
@@ -169,7 +201,7 @@
     <footer class="page-footer font-small blue fixed-bottom">
     
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 By <a href="https://twitter.com/pablooterot?lang=es@PabloOteroT">Pablo Otero</a> for  <a href="http://www.ieo.es">Instituto Español de Oceanografía</a> in the frame of <a href="https://www.seadatanet.org/About-us/SeaDataCloud">SeaDataCloud</a>, grant agreement 730960, EU H2020 programme
+      <div class="footer-copyright text-center py-3">© 2023 By <a href="https://twitter.com/pablooterot?lang=es@PabloOteroT">Pablo Otero</a> for  <a href="http://www.ieo.es">Centro Nacional Instituto Español de Oceanografía</a> in the frame of <a href="https://www.seadatanet.org/About-us/SeaDataCloud">SeaDataCloud</a>, grant agreement 730960, EU H2020 programme
       </div>
       <!-- Copyright -->
     
