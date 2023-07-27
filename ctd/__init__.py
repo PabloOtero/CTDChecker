@@ -35,13 +35,15 @@ from .flagging import (
     woa_normbias,
     stuck_value,
     density_inversion_test,
+    density_inversion_test_improved,
+    vertical_stability_test,
     instrument_range,
     overall,
 )
 
 from .formatting import (
-    load_mapping_P09,
-    load_mapping_P01,
+    load_mapping_SBEtoP09,
+    load_mapping_P09toP01,
     to_cnv_flagged,
     to_cnv_medatlas,
     imglist_to_pdf,
@@ -68,6 +70,10 @@ from .extras import (
     csr_bounding_box_test,
     cell_thermal_mass,
     add_pxylookup_info,
+)
+
+from .netcdf import (
+    df2nc,
 )
 
 __version__ = get_versions()["version"]
@@ -104,5 +110,6 @@ __all__ = [
     "cell_thermal_mass",
     "speed_test",
     "add_pxylookup_info",
-    "load_csr"
+    "load_csr",
+    "df2nc"
 ]

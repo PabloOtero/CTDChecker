@@ -52,7 +52,7 @@ def upload_csr_file():
             if 'files[]' not in request.files:
                 flash("No file part", "Error")
                 return redirect(request.url)            
-        elif option == ['2']:
+        elif option == ['2'] or option == ['3'] or option == ['4']:
             if 'file' not in request.files and 'files[]' not in request.files:
                 flash("No file part", "Error")
                 return redirect(request.url)            
@@ -61,7 +61,7 @@ def upload_csr_file():
             return redirect(request.url)
         
         uploaded_csr = False              
-        if option == ['2']:
+        if option == ['2'] or option == ['3'] or option == ['4']:
             file_csr = request.files['file']        
             if file_csr.filename == '':
                 flash("No files selected for uploading", "Error")
@@ -86,7 +86,12 @@ def upload_csr_file():
                
         if(uploaded_csr is True and uploaded_cnv is True):
             print('Process CTDs and CSR')
-            metadata = check_casts(app.config['UPLOAD_FOLDER'], csr)
+            if option == ['2']:
+                metadata = check_casts(app.config['UPLOAD_FOLDER'], csr, tonetcdf = False, merged_ncfile = False)
+            elif option == ['3']:
+                metadata = check_casts(app.config['UPLOAD_FOLDER'], csr, tonetcdf = True, merged_ncfile = False)
+            else:
+                metadata = check_casts(app.config['UPLOAD_FOLDER'], csr, tonetcdf = True, merged_ncfile = True)
             #return render_template('step2.html', success='True')
         elif(uploaded_csr is False and uploaded_cnv is True):
             print('Process only CTDS')
@@ -128,7 +133,7 @@ def upload_csr_file():
 
             try:
                 print('Sending mail')
-                msg = Message('New CTD set processed', sender =   'your_email_address', recipients = ['name@example.com'])
+                msg = Message('New CTD set processed', sender = app.config['MAIL_USERNAME'], recipients = app.config['MAIL_RECIPIENTS'])
                 if csr:
                     msg.body = "Hi, survey " + csr["cruise_name"] + " with " + str(len(metadata)) + " CTDs has been processed."
                     
@@ -152,6 +157,13 @@ def return_files_tut():
         shutil.make_archive(archive_name, 'zip', app.config['UPLOAD_FOLDER'], 'ctdcheck_output')
         shutil.move('%s.%s'%(archive_name,'zip'), app.config['UPLOAD_FOLDER'])
         return send_from_directory(app.config['UPLOAD_FOLDER'], archive_name + '.zip', as_attachment=True, cache_timeout=0)
+    except Exception as e:
+        return str(e)
+
+@app.route('/return-test/')
+def return_files_test():
+    try:        
+        return send_from_directory('./tests/', 'test_download.zip', as_attachment=True, cache_timeout=0)
     except Exception as e:
         return str(e)
         
