@@ -1,21 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul  3 14:23:11 2019
-Last update on 15 March 2021
+Last update on 10 March 2023
 
-@author: pablo.otero@ieo.es
-         Instituto Español de Oceanografía
+@author: pablo.otero@ieo.csic.es
+         Centro Nacional Instituto Español de Oceanografía (IEO-CSIC)
          
 This is a Flask version. To run it, open a terminal, activate your environment
 and type in the working directory 'python app.py'. 
 Open your browser at http://localhost:5000/
 
-To run locally, you have to modify some parts:
-    1) Turn flash_messages variable to False in checking.py, read.py and extras.py
-    2) Set your path with your files (line after import statements)
-    3) Uncomment the last block of lines at the end of this file
-    
-    
+IMPORTANT: To run locally, you have to modify config.py.
+  
 WARNING Oct 2021 Fails with some updates in libraries
  lxml==4.6.1
  pandas==1.1.4    
@@ -33,9 +29,17 @@ from matplotlib import style
 import matplotlib.cbook
 import numpy as np
 import warnings
-import pandas_profiling
+#import pandas_profiling
 from flask import flash
-flash_messages = True
+import xarray as xr
+import numpy as np
+
+import config
+if config.RUN_LOCALLY:
+    flash_messages = False
+else:
+    flash_messages = True
+
 
 plt.ioff()
 matplotlib.use('Agg')
@@ -43,31 +47,28 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 warnings.simplefilter(action="ignore", category=FutureWarning)
 warnings.simplefilter(action="ignore", category=DeprecationWarning)
 
-#path=('D:/Pablo/CentroDatos/Datos/PENDIENTES/JUREVA0416_fail/')
-#path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/test_elena/')
-#path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/CAREVA0316/')
-#path = Path('D:/Pablo/CentroDatos/Datos/PENDIENTES/DEMERSALES2020/')
-
 
 """
     Process CTD files
 """
-def check_casts(tmpdir, csr = None):
+def check_casts(tmpdir, csr = None, tonetcdf = False, merged_ncfile = False):
     
     if csr is None:
         tonemo = True
         tomedatlas = False
         plotting = True
         metadating = False
-        coupling = False
+        coupling = False      
     else:
         tonemo = False
         tomedatlas = True
         plotting = True
         metadating = True
-        coupling = True        
+        coupling = True
+            
     feda = False
     preprocessing = False
+    
     
     path = Path(tmpdir)
     filenames = list(path.glob('*.cnv'))
@@ -92,22 +93,33 @@ def check_casts(tmpdir, csr = None):
     if metadating:
         outpath_cdi = outpath / "metadata"
         if not os.path.exists(outpath_cdi):
-            os.makedirs(outpath_cdi)    
+            os.makedirs(outpath_cdi)   
+            
+    if tonetcdf:
+        outpath_netcdf = outpath / "data-netcdf"
+        if not os.path.exists(outpath_netcdf):
+            os.makedirs(outpath_netcdf)             
+
+
+    """
+    Load mapping between SBE local variables and P09 vocabulary
+    You can find the P09 vocabulary here:
+    https://vocab.seadatanet.org/v_bodc_vocab_v2/search.asp?lib=p09&screen=0
+    """
+    mapping_SBEtoP09_dict = ctd.load_mapping_SBEtoP09()
     
     """
     Load QC configuration and replicate for secondary sensors. By the moment,
     only temperature has secondary sensor in P09 vocabulary
+    This file also includes additional information for variables, 
+    as P09 to P01 mapping
     """
     cfg = ctd.load_cfg()
     cfg['TE01'] = cfg['TEMP']
     cfg['TE02'] = cfg['TEMP']
+    cfg['TE02']['name_P01'] = 'TEMPPR02'
     
-    """
-    Load mapping between local variables and P09 vocabulary
-    https://vocab.seadatanet.org/v_bodc_vocab_v2/search.asp?lib=p09&screen=0
-    """
-    mapping_P09_dict = ctd.load_mapping_P09()
-    
+  
     """
         Load CTD files
     """
@@ -253,19 +265,18 @@ def check_casts(tmpdir, csr = None):
                         pass
                 if 'binavg_in' not in metadata[idx]['config']:
                     print('Bin average the index to an interval of 1')
-                    df = df.bindata(delta=1, method='interpolate')  
-                                                           
+                    df = df.bindata(delta=1, method='interpolate')                                                                                                                        
             except:
                 if flash_messages:
                     flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' Preprocessing required and I could not do it for you', "danger")
                 raise('Preprocessing required and I could not do it for you')
 
-        # After preprocessing, the length of data could be not enough. 
-        if len(df) < 2:
-            print('WARNING: After preprocessing, not enough data to continue with file ' + metadata[idx]['name'])
-            if flash_messages:
-                flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' After some preprocessing, not enough bin-averaged depths to continue. Drop this file and start again.', "danger")
-            return
+        # # After preprocessing, the length of data could be not enough. 
+        # if len(df) < 2:
+        #     print('WARNING: After preprocessing, not enough data to continue with file ' + metadata[idx]['name'])
+        #     if flash_messages:
+        #         flash('<code>File ' + metadata[idx]['name'] + '</code>' + ' After some preprocessing, not enough bin-averaged depths to continue. Drop this file and start again.', "danger")
+        #     return
 
         # Pressure is stored as index. Rename, move to column and change to integer
         df.index.names = ['PRES']
@@ -274,8 +285,8 @@ def check_casts(tmpdir, csr = None):
         
         # Rename variables according with P09 vocabularies
         for column in df.columns:
-            if column in mapping_P09_dict.keys():
-                df = df.rename({column:mapping_P09_dict[column]['name_P09']}, axis=1)
+            if column in mapping_SBEtoP09_dict.keys():
+                df = df.rename({column:mapping_SBEtoP09_dict[column]['name_P09']}, axis=1)
                
         # Remove duplicate sensors by removing columns with same name in dataframe   
         keep_names = set()
@@ -292,7 +303,7 @@ def check_casts(tmpdir, csr = None):
 
         # Reorder columns
         # Columns will follow the order in the SBE2P09.json file
-        columnsTitles = [d['name_P09'] for d in mapping_P09_dict.values()]
+        columnsTitles = [d['name_P09'] for d in mapping_SBEtoP09_dict.values()]
         keep_names = list()
         for name in columnsTitles:
             if name not in keep_names:
@@ -338,7 +349,7 @@ def check_casts(tmpdir, csr = None):
         # Stored in df.flags['TEMP'] and df.flags['PSAL']
         # Only works with TEMP and PSAL, not TE01 and TE02
         if 'TEMP' in df and 'PSAL' in df:
-            df = df.density_inversion_test()
+            df = df.density_inversion_test_improved()
 
         for varname in df.keys():
             if varname == 'TEMP' or varname == 'TE01' or varname == 'TE02':
@@ -382,17 +393,17 @@ def check_casts(tmpdir, csr = None):
         for irow, item in enumerate(df.index.values):
             result = ""
             for variable in df.keys():
-                result += str(df.flags[variable]["overall"][irow])
+                result += str(df.qc_flags[variable]["overall"][irow])
             flags[irow] = result
         df["FLAGS"] = flags.values()
-             
+                       
         
         """    Exploratory Data Analysis (FEDA)   """
-        if feda:
-            feda = metadata[idx]['name']+'.html'
-            fname = outpath / feda
-            cast_report = pandas_profiling.ProfileReport(df, minimal=True)
-            cast_report.to_file(fname)
+        # if feda:
+        #     feda = metadata[idx]['name']+'.html'
+        #     fname = outpath / feda
+        #     cast_report = pandas_profiling.ProfileReport(df, minimal=True)
+        #     cast_report.to_file(fname)
 
 
         """               PLOTTING                """ 
@@ -445,8 +456,78 @@ def check_casts(tmpdir, csr = None):
             to_cnv_medatlas(df[:], metadata[idx], fname, csr['custodian_code'])
             if idx == len(casts) - 1:
                 add_cruise_header(csr, len(casts), fname)
-                
+               
+        # Warning, we are passing a non-unmutable dataframe
+        # this only works for the last profile.
+        netcdf_files = []        
+        if tonetcdf:
+            fname = csr["cruise_id"] + "_" + metadata[idx]["station"].zfill(5) + "_H10" + ".nc"            
+            try:
+                netcdf_files.append(fname)
+                fname = outpath_netcdf / fname
+                df2nc(df, fname, metadata[idx], cfg, csr)              
+            except:
+                if flash_messages:
+                    flash('<code>Cannot create netcdf file for station' + metadata[idx]["station"] + '</code>', "warning")
+                else:
+                    print('Cannot create netcdf file for', fname)
+  
+    
+    if tonetcdf and merged_ncfile:
+        try:            
+            fname = csr["cruise_id"] + "_merged_H10" + ".nc"
+            output_file = outpath_netcdf / fname
             
+            filenames = list(outpath_netcdf.glob('*.nc'))
+        
+            # Load the files into a list of xarray datasets
+            datasets = [xr.open_dataset(file_path, mask_and_scale=False) for file_path in filenames]
+        
+            # Find the maximum value of MAXZ across all datasets
+            max_maxz = max([ds.MAXZ.max() for ds in datasets])
+           
+            # Create a new array with a range of values from 0 to max_maxz
+            new_maxz = xr.DataArray(np.arange(0, max_maxz+1), dims=('MAXZ',))
+        
+            # Interpolate each dataset to the new_maxz values along the MAXZ dimension
+            resampled_datasets = [ds.interp(MAXZ=new_maxz, kwargs={"fill_value": None}) for ds in datasets]
+               
+            # Replace any NaN values with the corresponding FillValue
+            filled_datasets = []
+            for ds in resampled_datasets:
+                filled_vars = {}
+                for var_name, var in ds.variables.items():
+                    if '_FillValue' in var.attrs:
+                        fill_value = var.attrs['_FillValue']
+                        filled_var = var.fillna(fill_value)
+                        filled_vars[var_name] = filled_var
+                    else:
+                        filled_vars[var_name] = var                    
+                filled_datasets.append(xr.Dataset(filled_vars, coords=ds.coords))
+                
+            # Merge the filled datasets along the INSTANCE dimension
+            merged_dataset = xr.concat(filled_datasets, dim='INSTANCE')      
+            merged_dataset.to_netcdf(output_file, unlimited_dims='INSTANCE')
+
+            # Make sure netcdf files are not in use
+            for ds in datasets:
+                ds.close()            
+            for ds in resampled_datasets:
+                ds.close()
+            for ds in filled_datasets:
+                ds.close()                
+            
+            if merged_ncfile:
+                for f in filenames:
+                    os.remove(f)
+            
+        except:
+            if flash_messages:
+                flash('Something was wrong during netcdf merging. We will try to provide you with nc individual files. Cross fingers!', "danger")
+            else:
+                print('Something was wrong during netcdf merging')
+    
+    
         
     """             REPORT TO USER                """
     #       Out of the loop to report once      
@@ -500,14 +581,15 @@ def check_casts(tmpdir, csr = None):
                         outfile.write(cdi_filename + ';3;MEDATLAS;CTD/' +  csr['cruise_time'][6:10] + '/' + fname.name + '\n')               
                 if flash_messages:
                     flash('Coupling table generated for IEO-NODC', "success")
-            else:
+            else:               
                 print('Coupling table can be only generated for IEO-NODC')
 
     return metadata
 
 
-## Load CSR file and check CTDs (Uncomment if run locally)
-# csr = load_csr(path)
-# metadata = check_casts(path, csr)
+if config.RUN_LOCALLY:    
+    tmpdir = config.PATH_LOCAL   
+    csr = load_csr(tmpdir)
+    metadata = check_casts(tmpdir, csr, tonetcdf = config.TO_NETCDF, merged_ncfile = config.MERGED_NCFILE)
 
 
