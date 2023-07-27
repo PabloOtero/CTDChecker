@@ -9,11 +9,17 @@ from oceansdb import WOA
 from datetime import datetime
 from shapely.geometry import Point
 from shapely.geometry.polygon import Polygon
-from gsw import density
 
 import pyxylookup
 from pyxylookup import pyxylookup
 
+
+try:
+    import gsw
+    GSW_AVAILABLE = True
+except ImportError:
+    warnings.warn("Missing package GSW, used to estimate density when needed.")
+    GSW_AVAILABLE = False
 
 warnings.simplefilter("error", UserWarning)
 np.seterr(divide="ignore", invalid="ignore")  # Treatment for division by zero
@@ -27,6 +33,7 @@ These quality checks mainly follow next manuals:
 
 FLAG_NONE = 0
 FLAG_GOOD = 1
+FLAG_PROBABLY_GOOD = 2
 FLAG_PROBABLY_BAD = 3
 FLAG_BAD = 4
 FLAG_MISSING = 9
@@ -64,11 +71,11 @@ def load_cfg(cfg=None):
 @register_series_method
 @register_dataframe_method
 def init_flags(df):
-    df.flags = ""  # Without this previous step doesn't work
-    df.flags = {}
-    df.flags["main"] = {}
+    df.qc_flags = ""  # Without this previous step doesn't work
+    df.qc_flags = {}
+    df.qc_flags["main"] = {}
     for varname in df.keys():
-        df.flags[varname] = {}
+        df.qc_flags[varname] = {}
 
     return
 
@@ -80,7 +87,7 @@ def valid_datetime(df, metadata):
         flag = FLAG_GOOD
     else:
         flag = FLAG_PROBABLY_BAD
-    df.flags["main"]["valid_datetime"] = flag
+    df.qc_flags["main"]["valid_datetime"] = flag
     return df
 
 
@@ -143,7 +150,7 @@ def location_at_sea(df, metadata, technique):
             raise KeyError("Bad input argument")         
               
                 
-    df.flags["main"]["location_at_sea"] = flag
+    df.qc_flags["main"]["location_at_sea"] = flag
     return df
 
 @register_series_method
@@ -176,7 +183,7 @@ def instrument_range(df, var, cfg):
 
     # Flag as 9 any masked input value
     flag[ma.getmaskarray(df[var]) | ~np.isfinite(df[var])] = FLAG_MISSING
-    df.flags[var]["instrument_range"] = flag
+    df.qc_flags[var]["instrument_range"] = flag
 
     return df
 
@@ -212,7 +219,7 @@ def global_range(df, var, cfg):
 
     # Flag as 9 any masked input value
     flag[ma.getmaskarray(df[var]) | ~np.isfinite(df[var])] = FLAG_MISSING
-    df.flags[var]["global_range"] = flag
+    df.qc_flags[var]["global_range"] = flag
 
     return df
 
@@ -243,7 +250,7 @@ def regional_range(df, var, metadata, cfg):
         coordinates = tuple(cfg[region]["geometry"]["coordinates"])
         polygon = Polygon(*coordinates)
         if polygon.contains(point):
-            print("Station inside ", region, "Evaluating regional test")
+            #print("Station inside ", region, "Evaluating regional test")
             cfg = cfg[region]
 
             assert cfg["minval"] < cfg["maxval"], (
@@ -265,7 +272,7 @@ def regional_range(df, var, metadata, cfg):
 
     # Flag as 9 any masked input value
     flag[ma.getmaskarray(df[var]) | ~np.isfinite(df[var])] = FLAG_MISSING
-    df.flags[var]["regional_range"] = flag
+    df.qc_flags[var]["regional_range"] = flag
 
     return df
 
@@ -293,7 +300,7 @@ def gradient(df, var, cfg):
     flag[y <= threshold] = FLAG_GOOD
     
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
-    df.flags[var]["gradient"] = flag
+    df.qc_flags[var]["gradient"] = flag
     
     return df
 
@@ -336,7 +343,7 @@ def gradient_depthconditional(df, var, cfg):
 
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
 
-    df.flags[var]["gradient_depthconditional"] = flag
+    df.qc_flags[var]["gradient_depthconditional"] = flag
       
     return df
 
@@ -359,7 +366,7 @@ def spike(df, var, cfg):
     
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[var]["spike"] = flag
+    df.qc_flags[var]["spike"] = flag
     
     return df
 
@@ -404,7 +411,7 @@ def spike_depthconditional(df, var, cfg):
        
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[var]["spike_depthconditional"] = flag
+    df.qc_flags[var]["spike_depthconditional"] = flag
      
     return df
 
@@ -456,7 +463,7 @@ def tukey53H_norm(df, var, cfg):
     
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[var]["tukey53H_norm"] = flag
+    df.qc_flags[var]["tukey53H_norm"] = flag
     
     return df
 
@@ -482,7 +489,7 @@ def digit_roll_over(df, var, cfg):
 
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[var]["digit_roll_over"] = flag
+    df.qc_flags[var]["digit_roll_over"] = flag
     
     return df
 
@@ -503,7 +510,8 @@ def profile_envelop(df, var, cfg):
 
     for layer in cfg:
         #ind = np.nonzero(eval("(z %s) & (z %s)" % (layer[0], layer[1])))[0]
-        ind = np.nonzero(eval("(z.array %s) & (z.array %s)" % (layer[0], layer[1])))[0]
+        #ind = np.nonzero(eval("(z.array %s) & (z.array %s)" % (layer[0], layer[1])))[0]
+        ind = np.nonzero(eval("(np.array(z) %s) & (np.array(z) %s)" % (layer[0], layer[1])))[0]
         f = eval("(x[ind] > %s) & (x[ind] < %s)" % (layer[2], layer[3]))
 
         flag[ind[f == True]] = FLAG_GOOD
@@ -511,7 +519,7 @@ def profile_envelop(df, var, cfg):
 
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[var]["profile_envelop"] = flag
+    df.qc_flags[var]["profile_envelop"] = flag
     
     return df
 
@@ -551,11 +559,12 @@ def woa_normbias(df, varname, metadata, cfg):
     woa_normbias = (x - woa["mean"]) / woa["standard_deviation"]
     normbias_abs = np.absolute(woa_normbias)
 
-    # 3 is the possible minimum to estimate the std, but I shold use higher.
+    # 3 is the possible minimum to estimate the std, but I should use higher. I
+    # modify to be 100 points
     try:
         min_samples = cfg[varname]["woa_normbias"]["min_samples"]
     except:
-        min_samples = 3
+        min_samples = 100
 
     threshold = cfg[varname]["woa_normbias"]["threshold"]
     assert (np.size(threshold) == 1) and (threshold is not None)
@@ -573,11 +582,11 @@ def woa_normbias(df, varname, metadata, cfg):
     #        (woa["number_of_observations"] >= min_samples) & (normbias_abs > threshold)
     #    )
     #] = FLAG_BAD
-    flag[(woa["number_of_observations"] >= min_samples) & (normbias_abs > threshold)] = FLAG_BAD
+    flag[(woa["number_of_observations"] >= min_samples) & (normbias_abs > threshold)] = FLAG_PROBABLY_GOOD
 
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING
     
-    df.flags[varname]["woa_normbias"] = flag
+    df.qc_flags[varname]["woa_normbias"] = flag
 
     # Save auxiliary data into DataFrame
     if not hasattr(df, "auxiliary"):
@@ -614,8 +623,9 @@ def stuck_value(df, var):
         
     flag[ma.getmaskarray(x) | ~np.isfinite(x)] = FLAG_MISSING    
 
-    df.flags[var]["stuck_value"] = flag
+    df.qc_flags[var]["stuck_value"] = flag
     return df
+
 
 
 @register_series_method
@@ -625,7 +635,17 @@ def density_inversion_test(df):
     With few exceptions, potential water density σθ will increase with increasing 
     pressure. When vertical profile data are obtained, this test is used to 
     flag as failed T, C, and S observations, which yield densities that do not 
-    sufficiently increase with pressure   
+    sufficiently increase with pressure
+    
+    With few exceptions, potential water density σθ will increase with increasing pressure. 
+    When vertical profile data are obtained, this test is used to flag as failed
+    T, C, and SP observations, which yield densities that do not sufficiently 
+    increase with pressure. A small, operator-selected density threshold (DT) 
+    allows for micro-turbulent exceptions. Here, σθn is defined as one sample 
+    increment deeper than σθn-1.
+    
+    This test uses the rho0 = gsw.pot_rho_t_exact(SA, t, p, 0)
+    
     """
 
     threshold = 0.03
@@ -633,8 +653,9 @@ def density_inversion_test(df):
     if "TEMP" and "PSAL" in df.columns:
         t = df["TEMP"].values
         s = df["PSAL"].values
+        p = df["PRES"].values  
 
-        dens = density.sigma0(s, t)
+        dens = gsw.pot_rho_t_exact(s, t, p, 0)
 
         y = ma.masked_all(t.shape, dtype=t.dtype)
         y[1:] = ma.diff(dens)
@@ -644,19 +665,156 @@ def density_inversion_test(df):
         flag[y >= -threshold] = FLAG_GOOD
         df.flags["TEMP"]["density_inversion_test"] = flag
         df.flags["PSAL"]["density_inversion_test"] = flag
+ 
+        if "CNDC" in df.columns:
+            df.qc_flags["CNDC"]["density_inversion_test"] = flag        
+ 
+    return df
+
+
+
+@register_series_method
+@register_dataframe_method
+def density_inversion_test_improved(df):
+    """
+    With few exceptions, potential water density σθ will increase with increasing 
+    pressure. When vertical profile data are obtained, this test is used to 
+    flag as failed T, C, and S observations, which yield densities that do not 
+    sufficiently increase with pressure
+    
+    With few exceptions, potential water density σθ will increase with increasing pressure. 
+    When vertical profile data are obtained, this test is used to flag as failed
+    T, C, and SP observations, which yield densities that do not sufficiently 
+    increase with pressure. A small, operator-selected density threshold (DT) 
+    allows for micro-turbulent exceptions. Here, σθn is defined as one sample 
+    increment deeper than σθn-1. 
+    
+    The test can be run on downcasts, upcasts, or down/up cast.
+    
+    When the test fails:
+    - When the T gradient is positive (warmer in depth), the T is flagged as failed; 
+    - when the SP gradient is negative (fresher in depth), the SP and CNDC is fallged as failed; 
+    - Both may occur at the same time
         
+    """
+
+    threshold = 0.03
+
+    if "TEMP" and "PSAL" and "PRES" in df.columns:
+        
+        t = df["TEMP"].values
+        s = df["PSAL"].values
+        p = df["PRES"].values  
+        
+        assert np.shape(t) == np.shape(p)
+        assert np.shape(t) == np.shape(s)
+        assert np.ndim(t) == 1, "Not ready to compute density an array ndim > 1"
+        
+        flag_t = np.zeros(np.shape(t), dtype="i1")
+        flag_s = np.zeros(np.shape(t), dtype="i1")
+        
+        if GSW_AVAILABLE:
+            rho0 = gsw.pot_rho_t_exact(s, t, p, 0)
+            y = np.nan * np.atleast_1d(t)
+            y[0:-1] = np.sign(np.diff(p)) * np.diff(rho0)
+            
+            y_t = np.nan * np.atleast_1d(t)
+            y_t[0:-1] = np.sign(np.diff(p)) * np.diff(t)
+            
+            y_s = np.nan * np.atleast_1d(t)
+            y_s[0:-1] = np.sign(np.diff(p)) * np.diff(s)
+        
+            flag_t[(y >= -threshold)] = FLAG_GOOD
+            flag_t[(y < -threshold) & (y_t <= 0)] = FLAG_GOOD
+            flag_t[(y < -threshold) & (y_t > 0)] = FLAG_BAD
+            
+            flag_s[(y >= -threshold)] = FLAG_GOOD
+            flag_s[(y < -threshold) & (y_s < 0)] = FLAG_BAD
+            flag_s[(y < -threshold) & (y_s >= 0)] = FLAG_GOOD
+            
+            
+        else:
+            warnings.warn("DensityInversion requires gsw!")
+            
+        df.qc_flags["TEMP"]["density_inversion_test_improved"] = flag_t
+        df.qc_flags["PSAL"]["density_inversion_test_improved"] = flag_s        
+        
+        if "CNDC" in df.columns:
+            df.qc_flags["CNDC"]["density_inversion_test_improved"] = flag_s
 
     return df
+
+
+
+@register_series_method
+@register_dataframe_method
+def vertical_stability_test(df, metadata):
+    """
+    The vertical stability of a water column is described by the square of the
+    buoyancy frequency N^2. In this paper we follow the  definition similar 
+    to that used in Jackett and McDougall (1995), now defined in terms of the 
+    vertical gradients of Absolute Salinity and Conservative Temperature 
+    (these being the salinity and temperature variables, respectively, of 
+    TEOS-10; IOC et al. 2010)
+    
+    A cast usually exhibits a typical  pattern; the mixed layer portion of the 
+    water column contains a minimally stable portion of the water column, while 
+    in the thermocline the water is at maximum stability, and this stability 
+    then decreases with depth below the seasonal thermocline. When isopycnal 
+    analysis is performed on oceanographic data or when an averaged dataset 
+    is used as a restoring condition for a model, the  of that data must be 
+    positive, and if it is not, significant problems arise.
+    
+    """
+
+    lat = metadata["lat"]
+    lon = metadata["lon"]
+
+
+    if "TEMP" and "PSAL" and "PRES" in df.columns:
+        
+        t = df["TEMP"].values
+        s = df["PSAL"].values
+        p = df["PRES"].values  
+        
+        assert np.shape(t) == np.shape(p)
+        assert np.shape(t) == np.shape(s)
+        assert np.ndim(t) == 1, "Not ready to compute density an array ndim > 1"
+        
+        flag = np.zeros(np.shape(t), dtype="i1")
+        
+        if GSW_AVAILABLE:
+            sa = gsw.SA_from_SP(s, p, lon, lat)
+            ct = gsw.CT_from_t(sa, t, p)
+            [n_squared, mid_array] = gsw.stability.Nsquared(sa, ct, p, lat=lat, axis=0)
+            
+            y = np.nan * np.atleast_1d(t)
+            y[0:-1] = n_squared
+            flag = np.zeros(np.shape(t), dtype="i1")
+            flag[y >= 0] = FLAG_GOOD
+            flag[y < 0] = FLAG_BAD            
+        else:
+            warnings.warn("DensityInversion requires gsw!")
+            
+        df.qc_flags["TEMP"]["vertical_stability_test"] = flag
+        df.qc_flags["PSAL"]["vertical_stability_test"] = flag        
+        
+        if "CNDC" in df.columns:
+            df.qc_flags["CNDC"]["vertical_stability_test"] = flag        
+
+    return df
+
+
 
 
 @register_series_method
 @register_dataframe_method
 def overall(df, varname):
-    flags = df.flags[varname]
+    flags = df.qc_flags[varname]
     criteria = list(flags.keys())
     output = np.asanyarray(flags[criteria[0]])
     for c in criteria[1:]:
         assert len(flags[c]) == len(output)
         output = np.max([output, flags[c]], axis=0)
-    df.flags[varname]["overall"] = output
+    df.qc_flags[varname]["overall"] = output
     return df

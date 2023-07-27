@@ -131,6 +131,10 @@
       "full_name":"Fluorescence, WET Labs ECO-AFL/FL[mg/m^3]",
       "name_P09":"FLU2"
    },
+   "flS":{
+      "full_name":"Fluorescence, Seatech",
+      "name_P09":"FLUO"
+   },   
    "turbWETntu0":{
       "full_name":"Turbidity, WET Labs ECO [NTU]",
       "name_P09":"TUR4"

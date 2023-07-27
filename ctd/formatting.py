@@ -9,7 +9,7 @@ import numpy as np
 from datetime import datetime
 import warnings
 
-def load_mapping_P09():
+def load_mapping_SBEtoP09():
     try:
         # If cfg is available in ctd, use it
         mapping = json.loads(pkg_resources.resource_string("ctd", "SBEtoP09.json"))
@@ -17,7 +17,7 @@ def load_mapping_P09():
     except:
         warnings.warn("Could not load mapping between SBE variables and P09 vocabulary")
 
-def load_mapping_P01():
+def load_mapping_P09toP01():
     try:
         # If cfg is available in ctd, use it
         mapping = json.loads(pkg_resources.resource_string("ctd", "P09toP01.json"))
@@ -90,7 +90,6 @@ def to_cnv_medatlas(df, metadata, output_file, edmo_code):
               - EDMO code from custodian organization
     """
 
-    #accuracy = json.loads(pkg_resources.resource_string("ctd", "accuracy.json"))
     mapping_P01_dict = json.loads(pkg_resources.resource_string("ctd", "P09toP01.json"))
 
 
@@ -348,11 +347,11 @@ def to_cnv_medatlas(df, metadata, output_file, edmo_code):
     header = header + "*LOCAL_CDI_ID=" + local_cdi_id + "\n"
     header = (
         header
-        + '*<sdn_reference xlink:href="https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?edmo='
+        + '*<sdn_reference xlink:href="https://csr.seadatanet.org/report/edmo/'
         + edmo_code 
-        + '&identifier='
+        + '/'
         + cruise_id
-        + '" xlink:role="isObservedBy" xlink:type="SDN:L23::CSR"/>'
+        + '/xml" xlink:role="isObservedBy" xlink:type="SDN:L23::CSR"/>'
         + "\n"
     )
     header = (
